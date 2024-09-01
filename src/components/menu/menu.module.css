@@ -1,0 +1,11 @@
+.prueba {
+    color: white;
+    display: flex;
+    font-size: 50px;
+    background-color: turquoise;
+}
+
+.logoutButton{
+    border-radius: 50%;
+    background-color: beige;
+}
