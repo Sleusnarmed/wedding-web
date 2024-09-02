@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './menu.module.css';
 
 const getData = async () => {
-  const res = await fetch('http://localhost:3000/api/guests', {
+  const res = await fetch('/api/guests', {
     cache: 'no-store',
   });
 
