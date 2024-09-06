@@ -1,0 +1,168 @@
+.backgroundContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Abarca toda la altura de la ventana */
+  padding: 20px;
+  background-image: url('/img/background-dark.jpg');
+  background-size: cover; /* Asegura que la imagen de fondo cubra toda la pantalla */
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+
+.imageContainer {
+  position: absolute; /* Necesario para el posicionamiento de la imagen */
+  width: 100%; /* Ocupa el 100% del ancho del contenedor padre */
+  height: 20rem; /* Ajusta la altura según necesites */
+  top: -2rem;
+  right: -2;
+}
+
+
+.palmeraIzquierda {
+  position: fixed;
+  bottom: -1rem;
+  left: -17rem;
+  padding: 10px; /* Ajusta el padding según sea necesario */
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.palmeraDerecha {
+  position: fixed;
+  bottom: -1rem;
+  right: -14rem;
+  padding: 10px; /* Ajusta el padding según sea necesario */
+  z-index: 1;
+}
+
+.palmeraImage {
+  height: 500px;
+  width: auto;
+  opacity: 0.5; 
+}
+/* Estilos para el nombre de Sarai y Daniel */
+
+.nameAndDate .namePart {
+  display: inline-block; /* Mantiene el texto en una sola línea */
+}
+
+.nameAndDate h1 {
+  font-family: "AmoresaAged", sans-serif;
+  color: white;
+  font-size: 17rem; /* Ajusta según sea necesario */
+  line-height: 0.8; /* Ajusta el espacio entre líneas */
+}
+
+
+.nameAndDate .ampersand {
+  color: #caccc0; /* Color verde para el símbolo & */
+  position: relative;
+}
+
+.nameAndDate .ampersand::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  bottom: 40px; /* Ajusta según sea necesario */
+  width: 70%;
+  height: 4px; /* Ajusta el grosor del subrayado según sea necesario */
+  background-color: #caccc0;
+  background: linear-gradient(90deg, rgba(202, 204, 192,1) 0%, rgba(202, 204, 192,0.7525385154061625) 68%, rgba(202, 204, 192,1) 100%);
+}
+
+/* Estilos para el contenedor del formulario */
+.loginContainer {
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  display: flex;
+  flex-direction: column; /* Disposición en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  z-index: 2;
+}
+
+.handleLogin {
+  width: 70%;
+  display: flex;
+  flex-direction: column; /* Disposición en columna */
+  align-items: center; /* Centra los elementos dentro del formulario */
+  gap: 10px; /* Espacio entre los elementos */
+}
+
+.loginContainer label {
+  font-family: var(--font-subtitles);
+  color: #caccc0;
+  font-size: 2rem;
+  margin-bottom: 10px; /* Espacio debajo del label */
+  text-align: center; /* Centrar el texto del label */
+}
+
+.loginContainer input {
+  margin-bottom: 5px; /* Espacio debajo del campo de contraseña */
+  border-radius: 4px;
+  font-size: 4.5rem;
+  text-align: center;
+  width: 100%; /* Ajusta el ancho del campo de entrada */
+  height: 10rem;
+  padding: 1rem; /* Añade relleno interno */
+  color: white; /* Color del texto */
+  border: none;
+  background-color: rgba(202, 204, 192, 0.5);
+  outline: none;
+}
+
+.loginContainer input::placeholder {
+  color: white; /* Color del placeholder */
+  text-align: center;
+  font-size: 4.5rem;
+  font-family: var(--font-subtitles);
+  letter-spacing: 2px; /* Espacio entre caracteres */
+}
+
+.loginContainer button {
+  width: 50%; /* Ancho diferente para el botón */
+  font-size: 2rem;
+  font-family:  var(--font-subtitles);
+  padding: 10px; /* Añade relleno interno */
+  background-color: #20292A; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none;
+  border-radius: 10px; /* Esquinas redondeadas */
+  cursor: pointer;
+}
+
+.loginContainer button:hover {
+  background-color: black; /* Cambia el color al pasar el mouse */
+}
+
+
+/* Texto de explicacion */
+
+.explicationText {
+  font-family: var(--font-body);
+  color: #caccc0;
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 10px 0;
+  max-width: 75%; /* Limita el ancho del texto explicativo */
+}
+
+
+
+
+/* 
+ 
+width: 1600px
+1280px
+1024px
+768px
+600px
+480px
+360px
+ */

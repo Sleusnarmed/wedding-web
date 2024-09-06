@@ -17,7 +17,7 @@ export async function POST(request) {
       // Contraseña incorrecta
       return NextResponse.json({ success: false, message: 'Contraseña incorrecta' }, { status: 401 });
     }
-  } catch (error) {
+  } catch (error) { 
     // Manejo de errores
     return NextResponse.json({ success: false, message: 'Error al validar la contraseña' }, { status: 500 });
   }

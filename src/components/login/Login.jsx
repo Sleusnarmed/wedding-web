@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import styles from './login.module.css';
+import Image from 'next/image';
 
 const Login = ({ onLogin }) => {
   const [password, setPassword] = useState('');
@@ -30,20 +31,50 @@ const Login = ({ onLogin }) => {
   };
 
   return (
-    <div className={styles.loginContainer}>
-      <form onSubmit={handleLogin}>
-        <label htmlFor="userPassword">Inicia sesión</label>
-        <input
-          id="userPassword"
-          type="password"
-          placeholder="Ingresa tu contraseña"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
+    <div className={styles.backgroundContainer}>
+      <div className={styles.imageContainer}>
+        <Image
+          src="/img/decoration-lights.PNG" /* Cambia la ruta a tu imagen */
+          alt="Lights in X shape"
+          layout="fill" /* Asegura que la imagen cubra todo el contenedor */
+          objectFit="cover" /* Asegura que la imagen mantenga su proporción y cubra el contenedor */
         />
-        <button type="submit">Iniciar Sesión</button>
-      </form>
-      {error && <p className={styles.error}>{error}</p>}
+      </div>
+      <div className={styles.palmContainer}> 
+        <div className={styles.palmeraIzquierda}>
+          <Image src="/img/palm1.png" alt="Palmera" width={100} height={100} className={styles.palmeraImage} />
+        </div>
+        <div className={styles.palmeraDerecha}>
+          <Image src="/img/palm2.png" alt="Palmera" width={100} height={100} className={styles.palmeraImage} />
+        </div>
+      </div>
+      <div className={styles.nameAndDate}>
+        <h1>
+          <span className={styles.namePart}>Sarai <span className={styles.ampersand}>&</span></span>
+          <br />
+          <span className={styles.namePart}>Daniel</span>
+        </h1>
+      </div>
+      <div className={styles.loginContainer}>
+        <form className={styles.handleLogin} onSubmit={handleLogin}>
+          <label htmlFor="userPassword">Ingresa tu código</label>
+          <div className={styles.inputWrapper}>
+            <input
+              id="userPassword"
+              type="password"
+              placeholder="0 0 0  0 0 1"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
+        {error && <p className={styles.error}>{error}</p>}
+      </div>
+      <div className={styles.explicationText}>
+        <p>Una vez ingreses, podrás explorar los detalles del evento, horario, ubicación, la lista de regalos, y mucho más!</p>
+      </div>
     </div>
   );
 };
