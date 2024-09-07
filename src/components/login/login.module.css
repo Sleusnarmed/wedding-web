@@ -53,7 +53,7 @@ Version primera para celulares entre}
 }
 
 .nameAndDate h1 {
-  font-family: var(--font-titles) !important;
+  font-family: var(--font-second-titles) !important;
   color: white;
   font-size: 12rem;
   line-height: 0.8;
