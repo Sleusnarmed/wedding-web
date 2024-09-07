@@ -58,6 +58,7 @@ Version primera para celulares entre}
   font-size: 12rem;
   line-height: 0.8;
   z-index: 2;
+  text-rendering: optimizeLegibility;
 }
 
 .nameAndDate .ampersand {
