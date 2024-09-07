@@ -50,9 +50,9 @@ const Login = ({ onLogin }) => {
       </div>
       <div className={styles.nameAndDate}>
         <h1>
-          <span className={styles.namePart}>Sarai <span className={styles.ampersand}>&</span></span>
+          <span className={styles.namePart}>Daniel </span>
           <br />
-          <span className={styles.namePart}>Daniel</span>
+          <span className={styles.namePart}><span className={styles.ampersand}>&</span> Saraí</span>
         </h1>
       </div>
       <div className={styles.loginContainer}>
@@ -65,15 +65,14 @@ const Login = ({ onLogin }) => {
               placeholder="0 0 0  0 0 1"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              required
             />
           </div>
-          <button type="submit">Entrar</button>
+          <button type="submit">ENTRAR</button>
         </form>
         {error && <p className={styles.error}>{error}</p>}
       </div>
       <div className={styles.explicationText}>
-        <p>Una vez ingreses, podrás explorar los detalles del evento, horario, ubicación, la lista de regalos, y mucho más!</p>
+        <p>Una vez ingreses, podrás explorar los detalles del evento, horario, ubicación, la lista de regalos, y mucho más.</p>
       </div>
     </div>
   );

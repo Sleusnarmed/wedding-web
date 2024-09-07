@@ -26,6 +26,7 @@
   --font-titles: 'AmoresaAged', sans-serif;
   --font-body: 'GeneralSans', sans-serif;
   --font-subtitles: 'Boska', sans-serif; 
+  --text-color: #caccc0;
 }
 
 * {
