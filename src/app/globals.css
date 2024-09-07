@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'AmoresaAged';
-  src: url('/fonts/AndreySharonov-Amoresa Aged.woff2') format('woff2'),
-       url('/fonts/AndreySharonov-Amoresa Aged.woff') format('woff'),
-       url('/fonts/AndreySharonov-Amoresa Aged.otf') format('opentype');
+  src: url('/fonts/AndreySharonov-AmoresaAged.woff2') format('woff2'),
+       url('/fonts/AndreySharonov-AmoresaAged.woff') format('woff'),
+       url('/fonts/AndreySharonov-AmoresaAged.otf') format('opentype');
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -32,7 +32,8 @@
   font-family: 'Salazar';
   src: url('/fonts/Salazar-DEMO.woff2') format('woff2'),
        url('/fonts/Salazar-DEMO.woff') format('woff'),
-       url('/fonts/Salazar-DEMO.otf') format('opentype');
+       url('/fonts/Salazar-DEMO.otf') format('opentype'),
+       url('/fonts/Salazar-DEMO.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
