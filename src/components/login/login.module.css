@@ -53,12 +53,12 @@ Version primera para celulares entre}
 }
 
 .nameAndDate h1 {
-  font-family: var(--font-titles);
+  font-family: var(--font-titles) !important;
   color: white;
   font-size: 12rem;
   line-height: 0.8;
   z-index: 2;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility; 
 }
 
 .nameAndDate .ampersand {
