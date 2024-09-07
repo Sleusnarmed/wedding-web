@@ -192,14 +192,11 @@ Version primera para celulares entre}
   }
 }
 
-/* Teléfonos estándar (entre 480px y 768px de ancho, y hasta 800px de altura) */
-@media (min-width: 480px) and (max-width: 767px) and (max-height: 799px) {
-  /* Estilos para teléfonos estándar */
-}
-
 /* Teléfonos grandes y phablets (480px a 768px de ancho y más de 800px de altura) */
 @media (min-width: 480px) and (max-width: 767px) and (min-height: 800px) {
-  /* Estilos para teléfonos grandes y phablets */
+  .nameAndDate h1 {
+    font-size: 15rem;
+  }
 }
 
 /* Tablets en modo vertical (entre 768px y 1024px de ancho) */
