@@ -1,14 +1,18 @@
 @font-face {
   font-family: 'AmoresaAged';
-  src: url('/fonts/Andrey Sharonov - Amoresa Aged.otf') format('opentype');
+  src: url('/fonts/Andrey Sharonov - Amoresa Aged.woff2') format('woff2'),
+       url('/fonts/Andrey Sharonov - Amoresa Aged.woff') format('woff'),
+       url('/fonts/Andrey Sharonov - Amoresa Aged.otf') format('opentype');
   font-weight: bold;
   font-style: italic;
-  font-display: swap; /* Recomendado para mejorar la carga de fuentes */
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Boska';
-  src: url('/fonts/Boska-Regular.otf') format('opentype');
+  src: url('/fonts/Boska-Regular.woff2') format('woff2'),
+       url('/fonts/Boska-Regular.woff') format('woff'),
+       url('/fonts/Boska-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -16,11 +20,14 @@
 
 @font-face {
   font-family: 'GeneralSans';
-  src: url('/fonts/GeneralSans-Regular.otf') format('opentype');
+  src: url('/fonts/GeneralSans-Regular.woff2') format('woff2'),
+       url('/fonts/GeneralSans-Regular.woff') format('woff'),
+       url('/fonts/GeneralSans-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 
 :root {
   --font-titles: 'AmoresaAged', sans-serif;
