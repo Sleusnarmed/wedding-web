@@ -70,7 +70,7 @@ Version primera para celulares entre}
   content: "";
   position: absolute;
   left: 10%;
-  bottom: 2rem;
+  bottom: 3.5rem;
   width: 70%;
   height: 0.4rem;
   background: linear-gradient(90deg, rgba(202, 204, 192, 1) 0%, rgba(202, 204, 192, 0.75) 68%, rgba(202, 204, 192, 1) 100%);
@@ -119,16 +119,8 @@ Version primera para celulares entre}
   caret-color: transparent;
 }
 
-.loginContainer input::placeholder {
-  color: white;
-  text-align: center;
-  font-size: 3.3rem;
-  font-family: var(--font-subtitles);
-  letter-spacing: 0.2rem;
-}
-
 .loginContainer button {
-  width: 50%;
+  width: auto;
   font-size: 2rem;
   font-family: var(--font-subtitles);
   padding: 1rem;
@@ -174,18 +166,11 @@ Version primera para celulares entre}
   }
 
   .palmeraIzquierda {
-    position: fixed;
-    bottom: -1rem;
     left: -12rem;
-    z-index: 1;
-   
   }
   
   .palmeraDerecha {
-    position: fixed;
-    bottom: -1rem;
     right: -10rem;
-    z-index: 1;
   }
 
   .loginContainer button{
@@ -198,20 +183,67 @@ Version primera para celulares entre}
   .nameAndDate h1 {
     font-size: 15rem;
   }
+
+  .nameAndDate{
+    margin-top: 4rem;
+  }
+
+  .imageContainer{
+    height: 22rem;
+  }
 }
 
 /* Tablets en modo vertical (entre 768px y 1024px de ancho) */
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* Estilos para tablets en modo vertical */
+  .nameAndDate h1{
+    font-size: 18.5rem;
+  }
+
+  .imageContainer{
+    height: 30rem;
+    top: -5rem;
+  }
+  
+  .loginContainer label{
+    font-size: 4rem;
+  }
+
+  .loginContainer button{
+    font-size: 3rem;
+    width: auto;
+  }
+  
+  .explicationText{
+    font-size: 4.5rem;
+  }
 }
 
 /* Tablets en modo horizontal y pantallas pequeñas de escritorio (1024px a 1200px de ancho) */
-@media (min-width: 1024px) and (max-width: 1199px) {
-  /* Estilos para tablets en modo horizontal y pantallas pequeñas de escritorio */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .backgroundContainer{
+    background-image: url('/img/background-dark_desktop.png');
+  }
+
+  .nameAndDate h1{
+    font-size: 25rem;
+  }
+
+  .loginContainer label{
+    font-size: 6rem;
+  }
+
+  .loginContainer {
+    width: 250rem;
+  }
+
+  .loginContainer button{
+    font-size: 3.5rem;
+  }
+
 }
 
 /* Escritorio estándar (mayor a 1200px de ancho) */
-@media (min-width: 1200px) {
+@media (min-width: 1280px) and (max-width: 1599px){
   /* Estilos para pantallas de escritorio estándar */
 }
 

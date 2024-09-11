@@ -36,7 +36,7 @@ const Login = ({ onLogin }) => {
         <Image
           src="/img/decoration-lights.PNG" /* Cambia la ruta a tu imagen */
           alt="Lights in X shape"
-          layout="fill" /* Asegura que la imagen cubra todo el contenedor */
+          layout="fill" /* Asegura que la imagen cubra el contenedor */
           objectFit="cover" /* Asegura que la imagen mantenga su proporción y cubra el contenedor */
         />
       </div>
