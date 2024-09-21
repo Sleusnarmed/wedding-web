@@ -1,11 +1,13 @@
 'use client';
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation'; // Usa el enrutador de next/navigation
 import styles from './login.module.css';
 import Image from 'next/image';
 
-const Login = ({ onLogin }) => {
+const Login = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const router = useRouter(); // Inicializa el hook useRouter para redirigir
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -20,8 +22,8 @@ const Login = ({ onLogin }) => {
 
       if (res.ok) {
         const data = await res.json();
-        localStorage.setItem('guestName', data.name); // Intenta guardar el nombre
-        onLogin(); // Cambia el estado a autenticado en la página principal
+        localStorage.setItem('guestName', data.name); // Guardar el nombre del invitado
+        router.push('/boda-darai'); // Redirigir al usuario una vez autenticado
       } else {
         setError('Contraseña incorrecta. Inténtalo de nuevo.');
       }
@@ -78,3 +80,4 @@ const Login = ({ onLogin }) => {
 };
 
 export default Login;
+
