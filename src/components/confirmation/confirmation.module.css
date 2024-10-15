@@ -1,0 +1,74 @@
+
+.confirmationContainer, .confirmedContainer{
+    background-color: rgba(32, 41, 42, 0.23);
+    margin-top: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.confirmedContainer h1 {
+   font-size: 4rem;
+   color: white;
+   margin-bottom: 1rem;
+   font-family: var(--font-subtitles);
+}
+.confirmationContainer h1 {
+   font-size: 3rem;
+   color: white;
+   margin-bottom: 1rem;
+   font-family: var(--font-subtitles);
+}
+
+.invAvalaible {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-family: var(--font-body);
+}
+
+/* Estilos generales para el select */
+.customSelect {
+    appearance: none; /* Elimina el estilo predeterminado del select */
+    text-align: center;
+    font-family: var(--font-body);
+    -webkit-appearance: none; /* Para Safari */
+    -moz-appearance: none; /* Para Firefox */
+    padding: 1rem; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco */
+    color: #273b2b; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el select */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+    width: 20%;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  
+  /* Estilo al hacer foco */
+  .customSelect:focus {
+    border: 0.3rem solid #273b2b; /* Fondo de las opciones */
+    box-shadow: 0 0 5px rgba(56, 142, 60, 0.5); /* Sombra al hacer foco */
+    outline: none; /* Elimina el contorno predeterminado */
+  }
+  
+  /* Estilos para opciones del select (en algunos navegadores, no se pueden modificar completamente) */
+  .customSelect option {
+    font-size: 2rem;
+    overflow: hidden;
+    color: #273b2b; /* Color del texto de las opciones */
+  }
+
+.confirmationButton, .cancelConfirmationButton {
+  width: auto;
+  font-size: 2rem;
+  font-family: var(--font-subtitles);
+  padding: 1rem;
+  background-color: #273b2b;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}

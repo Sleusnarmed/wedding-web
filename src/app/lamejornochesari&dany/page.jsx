@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation"; // Importa desde 'next/navigation'
-import styles from "./BodaDaraiPage.module.css";
+import styles from "./lamejornochesari&dany.module.css";
 
 import Carrier from "@/components/carrier/Carrier";
 import Confirmation from "@/components/confirmation/Confirmation";
@@ -67,10 +67,10 @@ const BodaDaraiPage = () => {
 
   return (
     <div className={styles.pageContainer}>
-      <div className={styles.decortaionLightsContainer}></div>
+      <div className={styles.decortaionLightsContainer__topPage}></div>
       <h1 className={styles.names}>Daniel y Saraí</h1>
       <div className={styles.gratitudeText}>
-        <h1 className={styles.title}>¡El amor esta en el aire!</h1>
+        <p className={styles.title}>¡El amor esta en el aire!</p>
         <p className={styles.paragraph}>
           Desde que nos conocimos andábamos entre las nubes pero nunca pensamos
           que al pasar el tiempo compartiríamos experiencias únicas, pláticas
@@ -82,9 +82,46 @@ const BodaDaraiPage = () => {
         </p>
         <p className={styles.farewell}>¿Nos acompañarías?</p>
       </div>
+      <div className={styles.decorationLightsContainer__midPage}></div>
+      <div className={styles.bibleVerse}>
+        <p className={styles.verse}>
+          “Las muchas aguas no podrán apagar el amor, ni lo ahogarán los ríos.
+          Si diese el hombre todos los bienes de su casa por este amor, de
+          cierto lo menospreciarían.”
+        </p>
+        <p className={styles.verseNumber}>Cantares 8:7</p>
+      </div>
 
       {/* Componente de Confirmación */}
-      <Confirmation guestId={data?.id} initialConfirmation={data?.confirmation} />
+      <Confirmation
+        guestId={data?.id}
+        initialConfirmation={data?.confirmation}
+        data={data}
+      />
+      <div className={styles.dressCode}>
+        <h2>——Dress code——</h2>
+        <p> Vestimenta formal </p>
+      </div>
+
+      <div className={styles.forbiddenColors}>
+        <h2>— Colores prohibidos —</h2>
+        <div className={styles.forbiddenColors__ImageContainer}></div>
+      </div>
+
+      <div className={styles.giftTable}>
+        <h2 className={styles.giftTable__title}>Si gustas regalarnos algo: </h2>
+        <div className={styles.linkTablesContainer}>
+          <a href="/gift-table" className={styles.linkTable}>
+            Tabla de regalos
+          </a>
+          <a href="/registry" className={styles.linkTable}>
+            Registro
+          </a>
+          <a href="/lamejornochesari&dany/page" className={styles.linkTable}>
+            Página de la boda
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
