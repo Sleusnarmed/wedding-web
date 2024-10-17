@@ -10,9 +10,9 @@
 }
 
 .names {
-  font-size: 4rem;
-  margin-bottom: 2rem;
+  font-size: 11rem;
   color: white;
+  font-family: var(--font-titles_secondary);
 }
 
 .title {

@@ -1,3 +1,5 @@
+/* */
+
 @font-face {
   font-family: 'AmoresaAged';
   src: url('/fonts/AndreySharonov-AmoresaAged.woff2') format('woff2'),
@@ -30,11 +32,11 @@
 }
 
 @font-face {
-  font-family: 'Salazar';
-  src: url('/fonts/Salazar-DEMO.woff2') format('woff2'),
-       url('/fonts/Salazar-DEMO.woff') format('woff'),
-       url('/fonts/Salazar-DEMO.otf') format('opentype'),
-       url('/fonts/Salazar-DEMO.ttf') format('truetype');
+  font-family: 'Famulred';
+  src: url('/fonts/Famulred.woff2') format('woff2'),
+       url('/fonts/Famulred.woff') format('woff'),
+       url('/fonts/Famulred.otf') format('opentype'),
+       url('/fonts/Famulred.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -43,6 +45,7 @@
 
 :root {
   --font-titles: 'AmoresaAged', sans-serif;
+  --font-titles_secondary: 'Famulred', sans-serif;
   --font-body: 'GeneralSans', sans-serif;
   --font-subtitles: 'Boska', sans-serif; 
   --text-color: #caccc0;

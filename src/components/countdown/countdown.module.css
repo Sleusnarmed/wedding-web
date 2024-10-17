@@ -1,0 +1,38 @@
+.countdownContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1.5rem 0 3.5rem 0;
+    background-color: transparent; /* Fondo transparente para dar un look más limpio */
+  }
+  
+  .countdownContainer__days,
+  .countdownContainer__hours,
+  .countdownContainer__minutes,
+  .countdownContainer__seconds {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .countdownContainer p.timeValue {
+    font-size: 5rem; /* Tamaño grande para los números */
+    color: #2a2a2a; /* Color oscuro para los números */
+    background-color: rgba(103, 128, 113, 0.15);
+    text-align: center;
+    font-family: var(--font-subtitles);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: white;
+    margin: 0;
+    font-weight: 400; /* Peso más ligero para un look refinado */
+  }
+  
+  .countdownContainer p.timeLabel {
+    font-size: 1.5rem; /* Tamaño de las etiquetas */
+    color: #fff; /* Color gris claro para el texto */
+    margin-top: 0.5rem;
+    font-family: var(--font-subtitles);
+  }
+  

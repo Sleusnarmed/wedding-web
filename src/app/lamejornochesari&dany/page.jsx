@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation"; // Importa desde 'next/navigation'
 import styles from "./lamejornochesari&dany.module.css";
-
+import Countdown from "@/components/countdown/Countdown";
 import Carrier from "@/components/carrier/Carrier";
 import Confirmation from "@/components/confirmation/Confirmation";
 
@@ -69,6 +69,7 @@ const BodaDaraiPage = () => {
     <div className={styles.pageContainer}>
       <div className={styles.decortaionLightsContainer__topPage}></div>
       <h1 className={styles.names}>Daniel y Saraí</h1>
+      <Countdown/>
       <div className={styles.gratitudeText}>
         <p className={styles.title}>¡El amor esta en el aire!</p>
         <p className={styles.paragraph}>
