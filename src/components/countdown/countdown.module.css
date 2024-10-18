@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 1.5rem 0 3.5rem 0;
+    margin: 2rem 0;
     background-color: transparent; /* Fondo transparente para dar un look más limpio */
   }
   

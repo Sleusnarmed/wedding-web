@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { useRouter } from "next/navigation"; // Importa desde 'next/navigation'
 import styles from "./lamejornochesari&dany.module.css";
 import Countdown from "@/components/countdown/Countdown";
@@ -67,7 +68,14 @@ const BodaDaraiPage = () => {
 
   return (
     <div className={styles.pageContainer}>
-      <div className={styles.decortaionLightsContainer__topPage}></div>
+      <div className={styles.decortaionLightsContainer__topPage}>
+        <Image
+          src="/img/decoration-lights_mainPage.png"
+          alt="Decotración lamejornochesari y Dany"
+          width={300}
+          height={100}
+        />
+      </div>
       <h1 className={styles.names}>Daniel y Saraí</h1>
       <Countdown/>
       <div className={styles.gratitudeText}>
@@ -83,7 +91,14 @@ const BodaDaraiPage = () => {
         </p>
         <p className={styles.farewell}>¿Nos acompañarías?</p>
       </div>
-      <div className={styles.decorationLightsContainer__midPage}></div>
+      <div className={styles.decorationLightsContainer__midPage}>
+        <Image
+            src="/img/decoration-lights_mainPage.png"
+            alt="Decotración lamejornochesari y Dany"
+            width={300}
+            height={100}
+          />
+      </div>
       <div className={styles.bibleVerse}>
         <p className={styles.verse}>
           “Las muchas aguas no podrán apagar el amor, ni lo ahogarán los ríos.
@@ -99,14 +114,29 @@ const BodaDaraiPage = () => {
         initialConfirmation={data?.confirmation}
         data={data}
       />
+      <div className={styles.decorationLightsContainer__bottomPage}>
+        <Image
+            src="/img/decoration-lights_mainPage.png"
+            alt="Decotración lamejornochesari y Dany"
+            width={300}
+            height={100}
+          />
+      </div>
       <div className={styles.dressCode}>
         <h2>——Dress code——</h2>
         <p> Vestimenta formal </p>
       </div>
 
+
       <div className={styles.forbiddenColors}>
         <h2>— Colores prohibidos —</h2>
         <div className={styles.forbiddenColors__ImageContainer}>
+          <Image
+              src="/img/forbiddenColors.png"
+              alt="Colores prohibidos"
+              width={300}
+              height={80}
+            />
         </div>
       </div>
 
