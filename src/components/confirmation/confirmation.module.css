@@ -11,20 +11,20 @@
 
 .confirmedContainer h1 {
    font-size: 4rem;
-   color: white;
+   color: var(--text-color_mainPage);
    margin-bottom: 1rem;
    font-family: var(--font-subtitles);
 }
 .confirmationContainer h1 {
    font-size: 3rem;
-   color: white;
+   color: var(--text-color_mainPage);
    margin-bottom: 1rem;
    font-family: var(--font-subtitles);
 }
 
 .invAvalaible {
     font-size: 2rem;
-    color: white;
+    color: var(--text-color_mainPage);
     margin-bottom: 1rem;
     font-family: var(--font-body);
 }
@@ -67,7 +67,7 @@
   font-family: var(--font-subtitles);
   padding: 1rem;
   background-color: #273b2b;
-  color: white;
+  color: var(--text-color_mainPage);
   border: none;
   border-radius: 1rem;
   cursor: pointer;

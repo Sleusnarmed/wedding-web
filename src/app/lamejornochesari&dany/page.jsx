@@ -106,7 +106,8 @@ const BodaDaraiPage = () => {
 
       <div className={styles.forbiddenColors}>
         <h2>— Colores prohibidos —</h2>
-        <div className={styles.forbiddenColors__ImageContainer}></div>
+        <div className={styles.forbiddenColors__ImageContainer}>
+        </div>
       </div>
 
       <div className={styles.giftTable}>

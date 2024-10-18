@@ -48,8 +48,9 @@
   --font-titles_secondary: 'Famulred', sans-serif;
   --font-body: 'GeneralSans', sans-serif;
   --font-subtitles: 'Boska', sans-serif; 
-  --text-color: #caccc0;
   --font-second-titles: 'Salazar', sans-serif;
+  --text-color: #caccc0;
+  --text-color_mainPage: #fff;
 }
 
 * {

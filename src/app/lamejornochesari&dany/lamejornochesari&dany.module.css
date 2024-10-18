@@ -11,7 +11,7 @@
 
 .names {
   font-size: 11rem;
-  color: white;
+  color: var(--text-color_mainPage);
   font-family: var(--font-titles_secondary);
 }
 
@@ -21,7 +21,7 @@
   left: 50%;
   font-size: 3rem;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--text-color_mainPage);
   z-index: 1;
   margin: 0;
   font-family: var(--font-subtitles);
@@ -30,7 +30,7 @@
 .paragraph {
   background-color: rgba(32, 41, 42, 0.23);
   border-radius: 0.5rem;
-  color: white;
+  color: var(--text-color_mainPage);
   padding: 20px;
   font-size: 2rem;
   font-family: var(--font-body);
@@ -47,7 +47,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  color: white;
+  color: var(--text-color_mainPage);
   z-index: 1;
   font-family: var(--font-subtitles);
 }
@@ -56,7 +56,7 @@
 .bibleVerse {
   font-size: 3.5rem;
   margin-top: 3rem;
-  color: white;
+  color: var(--text-color_mainPage);
 }
 
 .verse {
@@ -78,7 +78,7 @@
 .dressCode p { 
   font-size: 2.5rem;
   font-family: var(--font-body);
-  color: white;
+  color: var(--text-color_mainPage);
 }
 
 .forbiddenColors h2{
