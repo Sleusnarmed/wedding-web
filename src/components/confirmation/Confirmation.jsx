@@ -73,7 +73,7 @@ const Confirmation = ({ guestId, initialConfirmation, data }) => {
         Confirmar asistencia
       </button>
       {error && <p className={styles.errorText}>{error}</p>}
-      {loading && <p>Cargando...</p>}
+      {loading && <p></p>}
     </div>
   );
 };

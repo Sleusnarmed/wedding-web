@@ -1,68 +1,58 @@
+.confirmationContainer, .confirmedContainer {
+  background-color: rgba(32, 41, 42, 0.23);
+  margin-top: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
 
-.confirmationContainer, .confirmedContainer{
-    background-color: rgba(32, 41, 42, 0.23);
-    margin-top: 3rem;
-    border-radius: 1rem;
-    display: flex;
-    padding: 1rem;
-    flex-direction: column;
-    align-items: center;   
+.confirmedContainer h1, .confirmationContainer h1 {
+  font-size: 2.5rem; /* Unificado el tamaño de fuente */
+  color: var(--text-color_mainPage);
+  margin-bottom: 1rem;
+  font-family: var(--font-subtitles);
 }
 
 .confirmedContainer h1 {
-   font-size: 4rem;
-   color: var(--text-color_mainPage);
-   margin-bottom: 1rem;
-   font-family: var(--font-subtitles);
-}
-.confirmationContainer h1 {
-   font-size: 3rem;
-   color: var(--text-color_mainPage);
-   margin-bottom: 1rem;
-   font-family: var(--font-subtitles);
+  font-size: 4rem; /* Especificado solo para .confirmedContainer */
 }
 
 .invAvalaible {
-    font-size: 2rem;
-    color: var(--text-color_mainPage);
-    margin-bottom: 1rem;
-    font-family: var(--font-body);
+  font-size: 2rem;
+  color: var(--text-color_mainPage);
+  margin-bottom: 1rem;
+  font-family: var(--font-body);
 }
 
-/* Estilos generales para el select */
 .customSelect {
-    appearance: none; /* Elimina el estilo predeterminado del select */
-    text-align: center;
-    font-family: var(--font-body);
-    -webkit-appearance: none; /* Para Safari */
-    -moz-appearance: none; /* Para Firefox */
-    padding: 1rem; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #fff; /* Fondo blanco */
-    color: #273b2b; /* Color del texto */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el select */
-    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
-    width: 20%;
-    margin-bottom: 1rem;
-    font-size: 3rem;
-  }
-  
-  /* Estilo al hacer foco */
-  .customSelect:focus {
-    border: 0.3rem solid #273b2b; /* Fondo de las opciones */
-    box-shadow: 0 0 5px rgba(56, 142, 60, 0.5); /* Sombra al hacer foco */
-    outline: none; /* Elimina el contorno predeterminado */
-  }
-  
-  /* Estilos para opciones del select (en algunos navegadores, no se pueden modificar completamente) */
-  .customSelect option {
-    font-size: 2rem;
-    overflow: hidden;
-    color: #273b2b; /* Color del texto de las opciones */
-  }
+  appearance: none; /* Estilo predeterminado eliminado */
+  text-align: center;
+  font-family: var(--font-body);
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #273b2b;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 20%;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.customSelect:focus {
+  border: 0.3rem solid #273b2b;
+  box-shadow: 0 0 5px rgba(56, 142, 60, 0.5);
+  outline: none;
+}
+
+.customSelect option {
+  font-size: 2rem;
+  color: #273b2b;
+}
 
 .confirmationButton, .cancelConfirmationButton {
-  width: auto;
   font-size: 2rem;
   font-family: var(--font-subtitles);
   padding: 1rem;
@@ -71,4 +61,104 @@
   border: none;
   border-radius: 1rem;
   cursor: pointer;
+  transition: transform 0.3s ease; /* Agrega una animación suave */
+}
+
+.confirmationButton:hover, .cancelConfirmationButton:hover {
+  transform: scale(1.5); /* Efecto de zoom suave al pasar el cursor */
+}
+
+/* Móviles pequeños (por ejemplo, iPhone SE) */
+@media only screen and (max-width: 320px) {
+  .confirmedContainer h1{
+    font-size: 3.5rem;
+  }
+
+  .confirmationContainer h1 {
+    font-size: 2.5rem;
+  }
+
+  .confirmationButton, .cancelConfirmationButton {
+    font-size: 1.8rem;
+  }
+
+  .customSelect{
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  /* Estilos para móviles pequeños */
+}
+
+/* Móviles medianos a grandes (por ejemplo, iPhone 12, Google Pixel, Galaxy S21) */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .confirmedContainer h1{
+    font-size: 4rem;
+  }
+
+  .confirmationContainer h1 {
+    font-size: 3rem;
+  }
+
+  .confirmationButton, .cancelConfirmationButton {
+    font-size: 2.2rem;
+  }
+
+  .customSelect{
+    font-size: 3.5rem;
+  }
+}
+
+/* Phablets o tablets pequeñas en modo retrato (por ejemplo, iPad Mini, Galaxy Tab) */
+@media only screen and (min-width: 426px) and (max-width: 600px) {
+  .confirmedContainer h1{
+    font-size: 5rem;
+  }
+
+  .confirmationContainer h1 {
+    font-size: 3.5rem;
+  }
+  .invAvalaible{
+    font-size: 2.5rem;
+  }
+
+  .confirmationButton, .cancelConfirmationButton {
+    font-size: 2.5rem;
+  }
+
+  .customSelect{
+    font-size: 3.8rem;
+    margin: 1rem 0 1.5rem 0;
+  }
+}
+
+/* Tablets en modo retrato (por ejemplo, iPad en modo vertical) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  
+}
+
+/* Tablets grandes en modo horizontal, laptops pequeñas (por ejemplo, iPad en modo horizontal, MacBook Air) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Estilos para tablets en modo horizontal y laptops pequeñas */
+}
+
+/* Pantallas medianas (laptops grandes, monitores de escritorio estándar) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  /* Estilos para laptops grandes y monitores estándar */
+}
+
+/* Pantallas grandes (monitores de escritorio grandes, iMacs) */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  /* Estilos para monitores grandes */
+}
+
+/* Pantallas muy grandes (monitores 4K o pantallas ultrawide) */
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* Estilos para monitores 4K o pantallas ultrawide */
+}
+
+/* Pantallas ultrawide o 4K+ (más de 1920px de ancho) */
+@media only screen and (min-width: 1921px) {
+  /* Estilos para pantallas ultrawide o más grandes que 4K */
 }

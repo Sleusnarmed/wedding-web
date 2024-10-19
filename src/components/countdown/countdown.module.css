@@ -17,7 +17,7 @@
   }
   
   .countdownContainer p.timeValue {
-    font-size: 5rem; /* Tamaño grande para los números */
+    font-size: 4rem; /* Tamaño grande para los números */
     color: #2a2a2a; /* Color oscuro para los números */
     background-color: rgba(103, 128, 113, 0.15);
     text-align: center;
@@ -35,4 +35,65 @@
     margin-top: 0.5rem;
     font-family: var(--font-subtitles);
   }
+
+  /* Móviles pequeños (por ejemplo, iPhone SE) */
+@media only screen and (max-width: 320px) {
+  .countdownContainer p.timeLabel {
+    font-size: 1.2rem;
+  }
   
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  /* Estilos para móviles pequeños */
+}
+
+/* Móviles medianos a grandes (por ejemplo, iPhone 12, Google Pixel, Galaxy S21) */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .countdownContainer p.timeValue {
+    font-size: 5rem;
+  }
+  .countdownContainer p.timeLabel {
+    font-size: 1.5rem;
+  }
+}
+
+/* Phablets o tablets pequeñas en modo retrato (por ejemplo, iPad Mini, Galaxy Tab) */
+@media only screen and (min-width: 426px) and (max-width: 600px) {
+  .countdownContainer p.timeValue {
+    font-size: 6rem;
+  }
+  .countdownContainer p.timeLabel {
+    font-size: 2rem;
+  }
+}
+
+/* Tablets en modo retrato (por ejemplo, iPad en modo vertical) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  /* Estilos para tablets en modo retrato */
+}
+
+/* Tablets grandes en modo horizontal, laptops pequeñas (por ejemplo, iPad en modo horizontal, MacBook Air) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Estilos para tablets en modo horizontal y laptops pequeñas */
+}
+
+/* Pantallas medianas (laptops grandes, monitores de escritorio estándar) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  /* Estilos para laptops grandes y monitores estándar */
+}
+
+/* Pantallas grandes (monitores de escritorio grandes, iMacs) */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  /* Estilos para monitores grandes */
+}
+
+/* Pantallas muy grandes (monitores 4K o pantallas ultrawide) */
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* Estilos para monitores 4K o pantallas ultrawide */
+}
+
+/* Pantallas ultrawide o 4K+ (más de 1920px de ancho) */
+@media only screen and (min-width: 1921px) {
+  /* Estilos para pantallas ultrawide o más grandes que 4K */
+}
