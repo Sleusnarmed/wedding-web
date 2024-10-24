@@ -65,7 +65,7 @@
 }
 
 .confirmationButton:hover, .cancelConfirmationButton:hover {
-  transform: scale(1.5); /* Efecto de zoom suave al pasar el cursor */
+  transform: scale(1.1); /* Efecto de zoom suave al pasar el cursor */
 }
 
 /* Móviles pequeños (por ejemplo, iPhone SE) */

@@ -1,0 +1,39 @@
+.mainVideoContainer {
+    position: fixed;
+    margin: 0 -1.5rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0; /* Para asegurar que se mantenga en la parte superior */
+    height: 100vh; /* Para ocupar toda la altura de la ventana */
+    overflow: hidden; /* Para eliminar el scroll */
+    z-index: 1; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.videoContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100vh; /* O ajusta según sea necesario */
+    background-color: transparent;
+}
+
+.closeButton {
+    background-color: transparent; /* Sin fondo */
+    border: none; /* Sin borde */
+    font-size: 6rem; /* Tamaño de la X */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    color: lightgray; /* Color de la X */
+    position: absolute; /* Posición para colocar el botón */
+    top: 10px; /* Ajusta según lo necesites */
+    right: 10px; /* Ajusta según lo necesites */
+    z-index: 1000; /* Asegúrate que esté encima de otros elementos */
+}
+
+.closeButton:hover {
+    color: gray; /* Cambia de color al pasar sobre el botón */
+}
