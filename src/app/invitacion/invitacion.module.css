@@ -119,17 +119,15 @@
   align-items: center;
   background-color: #595959;
   border-radius: 1.5rem;
-  height: 8rem;
-  transition: transform 0.3s ease-in-out;
+  height: 9rem;
 }
 
 .linkTable img {
   width: 9rem;
-  height: 5.5rem;
+  height: 5.7rem;
   background-color: #595959;
   border-radius: 1.5rem;
   padding: 1rem;
-  transition: transform 0.3s ease-in-out;
 }
 
 .linkTable img:hover {
