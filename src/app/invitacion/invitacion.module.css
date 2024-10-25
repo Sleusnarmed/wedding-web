@@ -30,7 +30,7 @@
 .names {
   font-size: 10rem;
   color: var(--text-color_mainPage);
-  font-family: var(--font-titles_secondary);
+  font-family: var(--font-titles_secondary) !important;
   text-rendering: optimizeLegibility;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .forbiddenColors h2{
-  font-size: 2.9rem;
+  font-size: 2.7rem;
 }
 
 .dressCode p {
@@ -125,7 +125,7 @@
 
 .linkTable img {
   width: 9rem;
-  height: 5rem;
+  height: 5.5rem;
   background-color: #595959;
   border-radius: 1.5rem;
   padding: 1rem;
@@ -160,7 +160,7 @@
 .ubicationContainer h2 {
   font-size: 8rem;
   color: var(--text-color_mainPage_secondary);
-  font-family: var(--font-titles_secondary);
+  font-family: var(--font-titles_secondary) !important;
 }
 
 .ubicationContainer__information{
@@ -194,7 +194,7 @@
    }
 
    .dressCode h2, .forbiddenColors h2 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
    }
 
    .dressCode p {
@@ -231,7 +231,7 @@
    }
 
    .forbiddenColors h2{
-    font-size: 3.3rem;
+    font-size: 3.1rem;
    }
 
    .dressCode p {
@@ -294,7 +294,7 @@
    }
 
    .forbiddenColors h2{
-    font-size: 3.5rem;
+    font-size: 3.3rem;
    }
 
    .dressCode p {
