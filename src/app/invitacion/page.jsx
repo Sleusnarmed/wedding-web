@@ -142,7 +142,7 @@ const BodaDaraiPage = () => {
                 src="/img/forbiddenColors.png"
                 alt="Colores prohibidos"
                 width={300}
-                height={80}
+                height={55}
               />
             </div>
           </div>
