@@ -23,7 +23,7 @@ const Login = () => {
       if (res.ok) {
         const data = await res.json();
         localStorage.setItem('guestName', data.name); // Guardar el nombre del invitado
-        router.push('/lamejornochesari&dany'); // Redirigir al usuario una vez autenticado
+        router.push('/invitacion'); // Redirigir al usuario una vez autenticado
       } else {
         setError('Contraseña incorrecta. Inténtalo de nuevo.');
       }

@@ -53,7 +53,7 @@ const Confirmation = ({ guestId, initialConfirmation, data }) => {
   return (
     <div className={styles.confirmationContainer}>
       <h1>Confirmar tu asistencia</h1>
-      <p className={styles.invAvalaible}>Tienes {data.maxinvguests} invitados </p>
+      <p className={styles.invAvalaible}>¡Hola {data.name}! <br />Tienes {data.maxinvguests} invitados </p>
       <select
         id="guestsConfirmed"
         name="guestsConfirmed"

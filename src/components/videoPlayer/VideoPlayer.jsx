@@ -16,7 +16,7 @@ export default function VideoPlayer() {
             {isVisible && (
                 <div className={styles.mainVideoContainer}>
                     <div className={styles.videoContainer}>
-                        <YouTubeEmbed videoId="qbrSuaxnMS0" width={700} height={250} params="autoplay=1" frameborder="0" allow="autoplay; fullscreen" />
+                        <YouTubeEmbed videoId="gfU1iZnjRZM" width={700} height={250} params="autoplay=1" frameborder="0" allow="autoplay; fullscreen" />
                         <button onClick={handleClose} className={styles.closeButton}>
                             &times;
                         </button>

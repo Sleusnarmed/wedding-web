@@ -1,0 +1,436 @@
+/* Mobile first 321px-375px */
+.mainContainer{
+  width: 100%;
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: transparent;
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  
+  width: 100%;
+  padding: 1.8rem;
+  font-size: 5rem;
+  text-align: center;
+  background: url('/img/background_mainPage.png') center / 100% 100% no-repeat; /* Optimizado para un mejor control de la imagen de fondo */
+}
+
+.decortaionLightsContainer__topPage {
+  margin: -1.5rem -1.8rem 0.5rem;
+}
+
+.decortaionLightsContainer__topPage img {
+  width: 100%;
+  height: 100px;
+}
+
+.names {
+  font-size: 10rem;
+  color: var(--text-color_mainPage);
+  font-family: var(--font-titles_secondary);
+  text-rendering: optimizeLegibility;
+}
+
+.title, .farewell, .verseNumber {
+  font-size: 3rem;
+  color: var(--text-color_mainPage);
+  font-family: var(--font-subtitles);
+}
+
+.paragraph {
+  background-color: rgba(32, 41, 42, 0.23);
+  border-radius: 0.5rem;
+  color: var(--text-color_mainPage);
+  padding: 2rem;
+  text-align: left;
+  font-size: 2rem;
+  font-family: var(--font-body);
+  width: 100%;
+}
+
+.decorationLightsContainer__midPage, 
+.decorationLightsContainer__bottomPage {
+  margin: -1.5rem -2rem 0.5rem;
+}
+
+.decorationLightsContainer__midPage img,
+.decorationLightsContainer__bottomPage img {
+  width: 100vw;
+  height: 100px;
+}
+
+.decorationLightsContainer__midPage img {
+  transform: scaleX(-1) rotate(-5deg);
+}
+
+.decorationLightsContainer__bottomPage img {
+  transform: scaleX(-1);
+}
+
+.dressCode h2, .forbiddenColors h2 {
+  font-size: 3.2rem;
+  margin-top: 3rem;
+  color: #20292a;
+  font-family: var(--font-subtitles);
+}
+
+.forbiddenColors h2{
+  font-size: 2.9rem;
+}
+
+.dressCode p {
+  font-size: 2.5rem;
+  font-family: var(--font-body);
+  color: var(--text-color_mainPage);
+}
+
+.forbiddenColors__ImageContainer img{
+  width: 100%;
+ }
+
+.giftTable {
+  text-align: center;
+  margin: 2rem 0 3.5rem 0;
+}
+
+.giftTable__title {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  color: #20292a;
+  font-family: var(--font-subtitles);
+}
+
+.linkTablesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  height: 8rem;
+}
+
+.linkTable{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #595959;
+  border-radius: 1.5rem;
+  height: 8rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.linkTable img {
+  width: 9rem;
+  height: 5rem;
+  background-color: #595959;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.linkTable img:hover {
+  transform: scale(1.05);
+}
+
+.bibleVerse {
+  font-size: 3.5rem;
+  color: var(--text-color_mainPage);
+}
+
+.verse {
+  font-family: var(--font-body);
+}
+
+.verseNumber {
+  margin-top: 0.7rem;
+}
+
+.ubicationContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.ubicationContainer h2 {
+  font-size: 8rem;
+  color: var(--text-color_mainPage_secondary);
+  font-family: var(--font-titles_secondary);
+}
+
+.ubicationContainer__information{
+  background-color: rgba(202, 204, 192, 0.91);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.ubicationContainer__information p {
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--font-body);
+  color: var(--text-color_mainPage_secondary);
+  margin-bottom: 3rem;
+}
+
+
+/* Móviles muy pequeños (por ejemplo, iPhone SE, Galaxy S5) */
+@media only screen and (max-width: 320px) {
+  .names {
+    font-size: 9rem;
+   }
+   .pageContainer{
+    padding: 1.5rem;
+   }
+
+   .decortaionLightsContainer__topPage img, 
+   .decorationLightsContainer__midPage img, 
+   .decorationLightsContainer__bottomPage img  {
+    height: 70px;
+   }
+
+   .dressCode h2, .forbiddenColors h2 {
+    font-size: 2.8rem;
+   }
+
+   .dressCode p {
+    font-size: 2.4rem;
+   }
+   .giftTable__title {
+    font-size: 2.5rem;
+   }
+   
+}
+
+/* Móviles pequeños (por ejemplo, iPhone 6, Galaxy S6) */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  /* Estilos para móviles pequeños */
+}
+
+/* Móviles medianos a grandes (por ejemplo, iPhone 12, Google Pixel, Galaxy S21) */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .names {
+    font-size: 11rem;
+   }
+   .pageContainer{
+    padding: 2.8rem;
+   }
+
+   .decortaionLightsContainer__topPage img, 
+   .decorationLightsContainer__midPage img, 
+   .decorationLightsContainer__bottomPage img  {
+    height: 11rem;
+   }
+
+   .dressCode h2 {
+    font-size: 3.8rem;
+   }
+
+   .forbiddenColors h2{
+    font-size: 3.3rem;
+   }
+
+   .dressCode p {
+    font-size: 3rem;
+   }
+
+   .giftTable__title {
+    font-size: 3rem;
+   }
+
+   .decortaionLightsContainer__topPage {
+    margin: -1.5rem -2.8rem 0;
+  }
+
+  .decorationLightsContainer__midPage, 
+  .decorationLightsContainer__bottomPage {
+    margin: -1.5rem -3rem 0;
+  }
+  .title, .farewell, .verseNumber{
+    font-size: 3.4rem;
+  }
+
+  .paragraph{
+    font-size: 2.2rem;
+    padding: 2.3rem;
+  }
+
+  .bibleVerse { 
+    font-size: 4.2rem;
+  }
+
+  .verseNumber{
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .forbiddenColors__ImageContainer img {
+    height: 10rem;
+  }
+}
+
+/* Phablets o tablets pequeñas en modo retrato (por ejemplo, iPad Mini, Galaxy Tab) */
+@media only screen and (min-width: 426px) and (max-width: 600px) {
+  .names {
+    font-size: 12.8rem;
+   }
+
+   .pageContainer{
+    padding: 3rem;
+   }
+
+   .decortaionLightsContainer__topPage img, 
+   .decorationLightsContainer__midPage img, 
+   .decorationLightsContainer__bottomPage img  {
+    height: 13rem;
+   }
+   
+   .dressCode h2 {
+    font-size: 4rem;
+   }
+
+   .forbiddenColors h2{
+    font-size: 3.5rem;
+   }
+
+   .dressCode p {
+    font-size: 3.4rem;
+   }
+
+   .giftTable__title {
+    font-size: 3.5rem;
+   }
+
+   .decortaionLightsContainer__topPage {
+    margin: -1.5rem -3rem 0;
+  }
+
+  .decorationLightsContainer__midPage, 
+  .decorationLightsContainer__bottomPage {
+    margin: -1.5rem -3.5rem 0;
+  }
+
+  .decorationLightsContainer__bottomPage img {
+    transform: scaleX(-1) rotate(4deg);
+  }
+
+  .decorationLightsContainer__bottomPages, 
+  .title, .farewell, .verseNumber{
+    font-size: 3.8rem;
+  }
+
+  .paragraph{
+    font-size: 2.5rem;
+    padding: 2.5rem;
+  }
+
+  .bibleVerse { 
+    font-size: 4.8rem;
+  }
+
+  .verseNumber{
+    font-size: 3.5rem;
+    margin: 1rem 0;
+  }
+  
+  .forbiddenColors__ImageContainer img {
+    height: 12rem;
+  }
+}
+
+/* Tablets en modo retrato (por ejemplo, iPad en modo vertical) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  
+  .mainContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .pageContainer{ 
+    width: 80%;
+    margin: 2rem 0;
+    padding: 4rem
+  }
+  
+  
+}
+
+/* Tablets grandes en modo horizontal, laptops pequeñas (por ejemplo, iPad en modo horizontal, MacBook Air) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .mainContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .pageContainer{ 
+    width: 50%;
+    margin: 2rem 0;
+    padding: 4rem
+  }
+}
+
+/* Pantallas medianas (laptops grandes, monitores de escritorio estándar) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .mainContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .pageContainer{ 
+    width: 50%;
+    margin: 2rem 0;
+    padding: 4rem
+  }
+}
+
+/* Pantallas grandes (monitores de escritorio grandes, iMacs) */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  .mainContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .pageContainer{ 
+    width: 50%;
+    margin: 2rem 0;
+    padding: 4rem
+  }
+}
+
+/* Pantallas muy grandes (monitores 4K o pantallas ultrawide) */
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  .mainContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+
+  .pageContainer{ 
+    width: 30%;
+    margin: 2rem 0;
+    padding: 4rem
+  }
+}
+
+/* Pantallas ultrawide o 4K+ (más de 1920px de ancho) */
+@media only screen and (min-width: 1921px) {
+  
+}

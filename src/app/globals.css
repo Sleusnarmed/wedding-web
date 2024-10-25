@@ -51,6 +51,7 @@
   --font-second-titles: 'Salazar', sans-serif;
   --text-color: #caccc0;
   --text-color_mainPage: #fff;
+  --text-color_mainPage_secondary: #000;
 }
 
 * {
