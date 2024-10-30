@@ -1,0 +1,9 @@
+.mapEmbedContainer {
+    width: 100%;
+    height: auto;
+}
+
+.mapEmbedContainer iframe {
+    width: 95%;
+    height: 25rem;
+}
