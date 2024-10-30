@@ -160,7 +160,7 @@ const BodaDaraiPage = () => {
                   height={80}
                 />
               </a>
-              <a href="/registry" className={styles.linkTable}>
+              <a href="https://www.chapur.com.mx/mesa-de-regalos/97880" className={styles.linkTable}>
                 <Image
                   src="/img/chapurLogo.png"
                   alt="Logo of Card"
