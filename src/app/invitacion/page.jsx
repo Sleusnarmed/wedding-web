@@ -25,18 +25,16 @@ const BodaDaraiPage = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const router = useRouter(); // Hook para redirección
+  const router = useRouter();
 
   useEffect(() => {
     const guestName = localStorage.getItem("guestName");
 
-    // Verificar si el usuario está autenticado
     if (!guestName) {
-      router.push("/"); // Redirigir a la página de login si no está autenticado
+      router.push("/"); // Redirige si no está autenticado
       return;
     }
 
-    // Si está autenticado, obtener datos del invitado
     const fetchData = async () => {
       try {
         const guests = await getData();
@@ -58,7 +56,13 @@ const BodaDaraiPage = () => {
     };
 
     fetchData();
-  }, [router]); // Elimina 'guestName' de las dependencias
+  }, [router]);
+  const handleUpdateConfirmation = (updatedConfirmation) => {
+    setData((prevData) => ({
+      ...prevData,
+      confirmation: updatedConfirmation,
+    }));
+  };
 
   if (loading) {
     return <Carrier />;
@@ -121,6 +125,7 @@ const BodaDaraiPage = () => {
             guestId={data?.id}
             initialConfirmation={data?.confirmation}
             data={data}
+            onUpdate={handleUpdateConfirmation}
           />
           <div className={styles.decorationLightsContainer__bottomPage}>
             <Image

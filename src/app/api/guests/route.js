@@ -16,17 +16,33 @@ export async function GET(request) {
 // Manejo de solicitud PUT
 export async function PUT(request) {
   try {
-    const { id, newMaxInvGuests } = await request.json();
+    const { id, newMaxInvGuests, confirmation, guestsConfirmed } = await request.json();
 
-    // Validar que los datos necesarios están presentes y son números
-    if (!id || newMaxInvGuests == null || isNaN(Number(id)) || isNaN(Number(newMaxInvGuests)) || newMaxInvGuests < 0) {
-      return NextResponse.json({ error: 'ID y nuevo valor de maxInvGuests son requeridos, deben ser números, y el número de invitados debe ser positivo' }, { status: 400 });
+    // Validar que los datos necesarios están presentes
+    if (!id || (newMaxInvGuests == null && guestsConfirmed == null && confirmation == null)) {
+      return NextResponse.json({ error: 'ID y al menos un campo para actualizar son requeridos' }, { status: 400 });
     }
 
-    // Actualizar el valor de maxInvGuests para el registro con el ID especificado
+    // Construir consulta SQL dinámicamente según los campos presentes
+    const fieldsToUpdate = [];
+    if (newMaxInvGuests != null) {
+      fieldsToUpdate.push(sql`maxInvGuests = ${newMaxInvGuests}`);
+    }
+    if (confirmation != null) {
+      fieldsToUpdate.push(sql`Confirmation = ${confirmation}`);
+    }
+    if (guestsConfirmed != null) {
+      fieldsToUpdate.push(sql`guestsConfirmed = ${guestsConfirmed}`);
+    }
+
+    if (fieldsToUpdate.length === 0) {
+      return NextResponse.json({ error: 'No hay campos válidos para actualizar' }, { status: 400 });
+    }
+
+    // Unir los campos en la consulta SQL
     const { rowCount } = await sql`
       UPDATE guests
-      SET maxInvGuests = ${newMaxInvGuests}
+      SET ${sql.join(fieldsToUpdate, sql`, `)}
       WHERE id = ${id}
       RETURNING *;
     `;
@@ -36,9 +52,9 @@ export async function PUT(request) {
     }
 
     // Respuesta exitosa
-    return NextResponse.json({ message: 'maxInvGuests actualizado correctamente', status: 200 });
+    return NextResponse.json({ message: 'Registro actualizado correctamente', status: 200 });
   } catch (error) {
-    console.error('Error updating maxInvGuests:', error);
-    return NextResponse.json({ error: 'Error actualizando maxInvGuests' }, { status: 500 });
+    console.error('Error actualizando el registro:', error);
+    return NextResponse.json({ error: 'Error actualizando el registro' }, { status: 500 });
   }
 }

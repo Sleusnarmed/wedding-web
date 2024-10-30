@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
 import styles from './confirmation.module.css';
 
-const Confirmation = ({ guestId, initialConfirmation, data }) => {
+const Confirmation = ({ guestId, initialConfirmation, data, onUpdate }) => {
   const [confirmation, setConfirmation] = useState(initialConfirmation);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -12,7 +12,7 @@ const Confirmation = ({ guestId, initialConfirmation, data }) => {
     setError("");
 
     try {
-      const body = JSON.stringify({ confirmation: confirm, guestsConfirmed });
+      const body = JSON.stringify({ confirmation: confirm, guestsConfirmed }); // Asegúrate de que guestsConfirmed se envía aquí
       const res = await fetch(`/api/guests/${guestId}`, {
         method: "PUT",
         headers: {
@@ -26,12 +26,13 @@ const Confirmation = ({ guestId, initialConfirmation, data }) => {
       }
 
       setConfirmation(confirm);
+      onUpdate(guestsConfirmed); // Pasa guestsConfirmed a onUpdate para que se actualice en el componente principal
     } catch (error) {
       setError(error.message);
     } finally {
       setLoading(false);
     }
-  }, [guestId, guestsConfirmed]);
+  }, [guestId, guestsConfirmed, onUpdate]);
 
   const handleGuestChange = useCallback((e) => {
     const value = parseInt(e.target.value, 10);
@@ -53,7 +54,7 @@ const Confirmation = ({ guestId, initialConfirmation, data }) => {
   return (
     <div className={styles.confirmationContainer}>
       <h1>Confirmar tu asistencia</h1>
-      <p className={styles.invAvalaible}>¡Hola {data.name}! <br />Tienes {data.maxinvguests} invitados </p>
+      <p className={styles.invAvalaible}>¡Hola {data.name}! <br />Tienes {data.maxinvguests} invitados</p>
       <select
         id="guestsConfirmed"
         name="guestsConfirmed"
@@ -69,7 +70,7 @@ const Confirmation = ({ guestId, initialConfirmation, data }) => {
           </option>
         ))}
       </select>
-      <button onClick={() => handleConfirmation(true)} disabled={loading || guestsConfirmed < 1} className={styles.confirmationButton} >
+      <button onClick={() => handleConfirmation(true)} disabled={loading || guestsConfirmed < 1} className={styles.confirmationButton}>
         Confirmar asistencia
       </button>
       {error && <p className={styles.errorText}>{error}</p>}

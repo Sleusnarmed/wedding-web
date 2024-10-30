@@ -8,17 +8,17 @@ export async function PUT(request, { params }) {
 
   try {
     const body = await request.json(); // Leer el cuerpo aquí
-    const { confirmation } = body; // Obtener la confirmación del cuerpo de la solicitud
+    const { confirmation, guestsConfirmed } = body; // Obtener la confirmación y la cantidad de invitados confirmados
 
-    // Validar que el ID y la confirmación estén presentes
-    if (!id || confirmation == null) {
-      return NextResponse.json({ error: 'ID y confirmación son requeridos' }, { status: 400 });
+    // Validar que el ID, la confirmación y la cantidad de invitados estén presentes
+    if (!id || confirmation == null || guestsConfirmed == null) {
+      return NextResponse.json({ error: 'ID, confirmación y cantidad de invitados son requeridos' }, { status: 400 });
     }
 
-    // Actualizar el estado de confirmación
+    // Actualizar el estado de confirmación y la cantidad de invitados confirmados
     const { rowCount } = await sql`
       UPDATE guests
-      SET confirmation = ${confirmation}
+      SET confirmation = ${confirmation}, guestsConfirmed = ${guestsConfirmed}
       WHERE id = ${id}
     `;
 
