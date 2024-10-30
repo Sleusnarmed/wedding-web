@@ -157,7 +157,10 @@ const BodaDaraiPage = () => {
               Si gustas regalarnos algo:{" "}
             </h2>
             <div className={styles.linkTablesContainer}>
-              <a href="https://www.amazon.com.mx/wedding/registry/RY4YW5V4AQ1T" className={styles.linkTable}>
+              <a
+                href="https://www.amazon.com.mx/wedding/registry/RY4YW5V4AQ1T"
+                className={styles.linkTable}
+              >
                 <Image
                   src="/img/amazonLogo.png"
                   alt="Logo of Amazon"
@@ -165,7 +168,10 @@ const BodaDaraiPage = () => {
                   height={80}
                 />
               </a>
-              <a href="https://www.chapur.com.mx/mesa-de-regalos/97880" className={styles.linkTable}>
+              <a
+                href="https://www.chapur.com.mx/mesa-de-regalos/97880"
+                className={styles.linkTable}
+              >
                 <Image
                   src="/img/chapurLogo.png"
                   alt="Logo of Card"
@@ -177,12 +183,17 @@ const BodaDaraiPage = () => {
                 href="/lamejornochesari&dany/page"
                 className={styles.linkTable}
               >
-                <Image
-                  src="/img/cardLogo.png"
-                  alt="Logo of Chapur"
-                  width={300}
-                  height={100}
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="200"
+                  height="200"
+                  viewBox="0 0 384 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148c25.049-31.381 43.63-49.449 82.757-49.449c30.764 0 68.816 19.799 68.816 49.631c0 22.552-18.617 34.134-48.993 51.164c-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271c0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271s-31.075-69.27-69.271-69.27z"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -198,8 +209,12 @@ const BodaDaraiPage = () => {
                 <br /> <br />
                 Pizza Paraíso SAN BRUNO, Telchac Puerto Yucatán
               </p>
-              <div>
+              <div className={styles.mapCotainer}>
                 <MapEmbed />
+                <p>
+                  !Estate atengo a está página, en los próximos meses habrán más
+                  avisos!
+                </p>
               </div>
             </div>
           </div>

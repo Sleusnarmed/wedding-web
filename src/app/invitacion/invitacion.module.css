@@ -46,7 +46,7 @@
   color: var(--text-color_mainPage);
   padding: 2rem;
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-family: var(--font-body);
   width: 100%;
 }
@@ -114,7 +114,7 @@
   height: 8rem;
 }
 
-.linkTable{
+.linkTable, .questionMark_ImageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,20 +123,23 @@
   height: 9rem;
 }
 
-.linkTable img {
-  width: 9rem;
-  height: 5.7rem;
-  background-color: #595959;
-  border-radius: 1.5rem;
-  padding: 1rem;
-}
 
+.linkTable img, .linkTable svg {
+  width: 10rem;
+  height: 50%;
+  background-color: #595959;
+  padding: 1rem;
+  color: white;
+}
+.linkTable svg{
+  padding: 0;
+}
 .linkTable img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .bibleVerse {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   color: var(--text-color_mainPage);
 }
 
@@ -146,6 +149,7 @@
 
 .verseNumber {
   margin-top: 0.7rem;
+  font-size: 3rem;
 }
 
 .ubicationContainer{
@@ -168,8 +172,8 @@
   border-radius: 1rem;
 }
 
-.ubicationContainer__information p {
-  font-size: 2rem;
+.ubicationContainer__information p, .mapCotainer p {
+  font-size: 1.8rem;
   text-align: center;
   font-family: var(--font-body);
   color: var(--text-color_mainPage_secondary);
@@ -199,6 +203,15 @@
    .dressCode p {
     font-size: 2.4rem;
    }
+
+   .paragraph{
+    font-size: 1.8rem;
+   }
+
+   .bibleVerse, .verseNumber{
+    font-size: 3rem;
+   }
+
    .giftTable__title {
     font-size: 2.5rem;
    }
@@ -206,6 +219,20 @@
    .forbiddenColors__ImageContainer img {
     height: 5rem;
    }
+
+   .ubicationContainer__information p, .mapCotainer p {
+    font-size: 1.6rem;
+   }
+
+   .linkTable img {
+    width: 9rem;
+    height: 50%;
+  }
+
+  .linkTable svg{
+    height: 40%;
+    width: 8.7rem;
+  }
 }
 
 /* Móviles medianos a grandes (por ejemplo, iPhone 12, Google Pixel, Galaxy S21) */
@@ -213,6 +240,7 @@
   .names {
     font-size: 11rem;
    }
+
    .pageContainer{
     padding: 2.8rem;
    }
@@ -247,17 +275,18 @@
   .decorationLightsContainer__bottomPage {
     margin: -1.5rem -3rem 0;
   }
+
   .title, .farewell, .verseNumber{
     font-size: 3.4rem;
   }
 
   .paragraph{
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding: 2.3rem;
   }
 
   .bibleVerse { 
-    font-size: 4.2rem;
+    font-size: 3.6rem;
   }
 
   .verseNumber{
@@ -267,6 +296,10 @@
 
   .forbiddenColors__ImageContainer img {
     height: 6.5rem;
+  }
+
+  .ubicationContainer__information p, .mapCotainer p {
+    font-size: 1.9rem;
   }
 }
 
