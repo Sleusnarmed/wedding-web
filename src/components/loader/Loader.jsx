@@ -1,6 +1,6 @@
 // Loader.jsx
 import React from "react";
-import styles from "./Loader.module.css"; // Asegúrate de tener un archivo CSS para los estilos.
+import styles from "./loader.module.css"; // Asegúrate de tener un archivo CSS para los estilos.
 
 const Loader = () => {
   return (
