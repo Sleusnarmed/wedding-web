@@ -89,7 +89,7 @@
 
 .forbiddenColors__ImageContainer img{
   width: 90%;
-  height: 3.5rem;
+  height: 5.5rem;
  }
 
 .giftTable {
@@ -202,12 +202,10 @@
    .giftTable__title {
     font-size: 2.5rem;
    }
-   
-}
 
-/* Móviles pequeños (por ejemplo, iPhone 6, Galaxy S6) */
-@media only screen and (min-width: 321px) and (max-width: 375px) {
-  /* Estilos para móviles pequeños */
+   .forbiddenColors__ImageContainer img {
+    height: 5rem;
+   }
 }
 
 /* Móviles medianos a grandes (por ejemplo, iPhone 12, Google Pixel, Galaxy S21) */
