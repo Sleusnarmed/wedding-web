@@ -5,10 +5,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     top: 0; /* Para asegurar que se mantenga en la parte superior */
     height: 100vh; /* Para ocupar toda la altura de la ventana */
     overflow: hidden; /* Para eliminar el scroll */
     z-index: 1; /* Asegúrate de que esté por encima de otros elementos */
+}
+.labelReproductionButton{
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: var(--font-body);
+}
+.playButton {
+    background: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    display: flex; /* Para centrar el icono */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    padding: 10px; /* Espaciado alrededor del icono */
+    outline: none; /* Sin contorno al hacer clic */
+}
+
+.playButton svg {
+    fill: white; /* Color del ícono */
+    width: 7rem; /* Tamaño del ícono */
+    height: 10rem; /* Tamaño del ícono */
 }
 
 .videoContainer {
@@ -18,10 +41,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh; /* O ajusta según sea necesario */
+    height: 100%; /* O ajusta según sea necesario */
     background-color: transparent;
 }
-
+.videoContainer iframe {
+    height: 80%;
+    width: 95%;
+}
 .closeButton {
     background-color: transparent; /* Sin fondo */
     border: none; /* Sin borde */
