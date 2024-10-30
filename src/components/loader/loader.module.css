@@ -1,0 +1,29 @@
+/* loader.module.css */
+
+.loaderContainer {
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+  display: flex;                  /* Usar flexbox para centrar el contenido */
+  justify-content: center;        /* Centrar horizontalmente */
+  align-items: center;            /* Centrar verticalmente */
+  height: 100vh;                 /* Ocupa toda la altura de la ventana */
+  background-color: inherit;     /* Fondo claro, cambia según tu diseño */
+}
+
+.palmTree {
+  animation: grow 1.5s ease-in-out infinite; /* Animación de crecimiento */
+  color: rgba(211, 211, 211, 0.6);
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);         /* Escala inicial */
+  }
+  50% {
+    transform: scale(1.2);       /* Escala aumentada */
+  }
+  100% {
+    transform: scale(1);         /* Vuelve a la escala original */
+  }
+}

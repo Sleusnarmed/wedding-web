@@ -1,9 +1,11 @@
 import { useRef, useState } from "react";
 import styles from "./videoPlayer.module.css";
+import Loader from "../loader/Loader";
 
 export default function VideoPlayer() {
   const [isVisible, setIsVisible] = useState(false); // Controla si el video se muestra
   const [isClosed, setIsClosed] = useState(false); // Controla si el video ya fue cerrado
+  const [isLoading, setIsLoading] = useState(true);
   const videoRef = useRef(null);
 
   // Función para mostrar el video y reproducirlo
@@ -46,15 +48,17 @@ export default function VideoPlayer() {
       {isVisible && (
         <div className={styles.mainVideoContainer}>
           <div className={styles.videoContainer}>
+            {isLoading && <div className={styles.loadingSpinner}><Loader></Loader></div>} {/* Mostrar cargador */}
             <iframe
               width="560"
               height="500"
-              src="https://www.youtube.com/embed/fClW6n_QLyo?si=l1baHq7PH7skJOzr&autoplay=1"
+              src="https://www.youtube.com/embed/fClW6n_QLyo?autoplay=1"
               title="YouTube video player"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
+              onLoad={() => setIsLoading(false)} // Desactiva el cargador una vez que el iframe carga
             ></iframe>
             <button onClick={handleClose} className={styles.closeButton}>
               &times;
