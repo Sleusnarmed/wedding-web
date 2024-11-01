@@ -19,11 +19,16 @@
   font-size: 4rem; /* Especificado solo para .confirmedContainer */
 }
 
-.invAvalaible {
+.invAvalaible, .notice {
   font-size: 2rem;
   color: var(--text-color_mainPage);
   margin-bottom: 1rem;
   font-family: var(--font-body-secondary);
+}
+
+.notice {
+  font-size: 1.7rem;;
+  padding: 1.2rem;
 }
 
 .customSelect {
