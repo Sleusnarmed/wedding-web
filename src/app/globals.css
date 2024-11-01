@@ -1,4 +1,5 @@
 /* */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400..900&display=swap');
 
 @font-face {
   font-family: 'AmoresaAged';
@@ -46,7 +47,8 @@
 :root {
   --font-titles: 'AmoresaAged', sans-serif;
   --font-titles_secondary: 'Famulred', sans-serif;
-  --font-body: 'GeneralSans', sans-serif;
+  --font-body: 'Libre Caslon Text', serif;
+  --font-body-secondary: 'GeneralSans', sans-serif;
   --font-subtitles: 'Boska', sans-serif; 
   --text-color: #caccc0;
   --text-color_mainPage: #fff;

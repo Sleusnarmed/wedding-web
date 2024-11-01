@@ -23,13 +23,13 @@
   font-size: 2rem;
   color: var(--text-color_mainPage);
   margin-bottom: 1rem;
-  font-family: var(--font-body);
+  font-family: var(--font-body-secondary);
 }
 
 .customSelect {
   appearance: none; /* Estilo predeterminado eliminado */
   text-align: center;
-  font-family: var(--font-body);
+  font-family: var(--font-body-secondary);
   padding: 1rem;
   border-radius: 5px;
   background-color: #fff;
