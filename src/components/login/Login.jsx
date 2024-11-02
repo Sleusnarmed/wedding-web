@@ -35,12 +35,7 @@ const Login = () => {
   return (
     <div className={styles.backgroundContainer}>
       <div className={styles.imageContainer}>
-        <Image
-          src="/img/decoration-lights.PNG" /* Cambia la ruta a tu imagen */
-          alt="Lights in X shape"
-          layout="fill" /* Asegura que la imagen cubra el contenedor */
-          objectFit="cover" /* Asegura que la imagen mantenga su proporción y cubra el contenedor */
-        />
+        <div className={styles.imageDecorationLights}></div>
       </div>
       <div className={styles.palmContainer}> 
         <div className={styles.palmeraIzquierda}>

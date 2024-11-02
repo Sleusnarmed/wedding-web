@@ -7,9 +7,7 @@ Version primera para celulares entre}
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
-  padding: 2rem;
   background-image: url('/img/background-dark.jpg');
   background-size: cover;
   overflow-x: hidden;
@@ -18,11 +16,15 @@ Version primera para celulares entre}
 }
 
 .imageContainer {
-  position: absolute;
   width: 100%;
-  height: 18rem;
-  top: -2rem;
-  z-index: 0;
+  height: 15rem;
+  margin-bottom: 5rem;
+}
+
+.imageDecorationLights{
+  background-image: url('/img/decoration-lights.png');
+  background-size: cover;
+  height: 15rem;
 }
 
 .palmeraIzquierda,
@@ -148,35 +150,6 @@ Version primera para celulares entre}
 /* QUERYS PARA OPTIMIZACIÓN CELULARES */
 
 /* Estilos para teléfonos muy pequeños */
-@media (max-width: 376px) and (max-height: 796px){
-  .nameAndDate h1 {
-    font-size: 8rem;
-  }
-
-  .imageContainer {
-    height: 12rem;
-  }
-
-  .palmeraImage {
-    height: 35rem;
-  }
-  
-  .explicationText { 
-    font-size: 2rem;
-  }
-
-  .palmeraIzquierda {
-    left: -12rem;
-  }
-  
-  .palmeraDerecha {
-    right: -10rem;
-  }
-
-  .loginContainer button{
-    font-size: 1.5rem;
-  }
-}
 
 /* Teléfonos grandes y phablets (480px a 768px de ancho y más de 800px de altura) */
 @media (min-width: 480px) and (max-width: 767px) and (min-height: 800px) {
@@ -200,8 +173,11 @@ Version primera para celulares entre}
   }
 
   .imageContainer{
-    height: 35rem;
-    top: -10rem;
+    height: auto;
+    
+  }
+  .imageDecorationLights{
+    height: 25rem;
   }
   
   .loginContainer label{
@@ -235,6 +211,11 @@ Version primera para celulares entre}
   .loginContainer {
     width: 250rem;
   }
+  
+  .imageDecorationLights{
+    background-image: url('/img/decoration-lights_desktop.png');
+    height: 18rem;
+  }
 
   .loginContainer button{
     font-size: 3.5rem;
@@ -244,17 +225,67 @@ Version primera para celulares entre}
 
 /* Escritorio estándar (mayor a 1200px de ancho) */
 @media (min-width: 1280px) and (max-width: 1599px){
-  /* Estilos para pantallas de escritorio estándar */
+  .backgroundContainer{
+    background-image: url('/img/background-dark_desktop.png');
+  }
+
+  .nameAndDate h1{
+    font-size: 17rem;
+    margin-bottom: 2rem;
+  }
+
+  .loginContainer label{
+    font-size: 7rem;
+  }
+
+  .loginContainer {
+    width: 250rem;
+    
+  }
+  
+  .imageDecorationLights{
+    background-image: url('/img/decoration-lights_desktop.png');
+    height: 25.4rem;
+  }
+
+  .loginContainer button{
+    font-size: 3.5rem;
+  }
+
+  .explicationText{
+    font-size: 4.5rem;
+  }
 }
 
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  .backgroundContainer{
+    background-image: url('/img/background-dark_desktop.png');
+  }
 
-/* 
- 
-width: 1600px
-1280px
-1024px
-768px
-600px
-480px
-360px
- */
+  .nameAndDate h1{
+    font-size: 20rem;
+    margin-bottom: 2rem;
+  }
+
+  .loginContainer label{
+    font-size: 7rem;
+  }
+
+  .loginContainer {
+    width: 250rem;
+    
+  }
+  
+  .imageDecorationLights{
+    background-image: url('/img/decoration-lights_desktop.png');
+    height: 32rem;
+  }
+
+  .loginContainer button{
+    font-size: 3.5rem;
+  }
+
+  .explicationText{
+    font-size: 4.5rem;
+  }
+ }

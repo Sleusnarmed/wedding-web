@@ -348,7 +348,7 @@
     transform: scaleX(-1) rotate(4deg);
   }
 
-  .decorationLightsContainer__bottomPages, 
+  .decorationLightsContainer__bottomPage, 
   .title, .farewell, .verseNumber{
     font-size: 3.8rem;
   }
@@ -374,22 +374,92 @@
 
 /* Tablets en modo retrato (por ejemplo, iPad en modo vertical) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-  
   .mainContainer{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background: linear-gradient(180deg, rgba(32,41,42,1) 0%, rgba(39,59,43,1) 25%, rgba(103,128,113,1) 50%, rgba(202,204,192,1) 75%, rgba(240,234,201,1) 100%);
+    z-index: 0;
   }
 
   .pageContainer{ 
-    width: 80%;
+    width: 90%;
     margin: 2rem 0;
-    padding: 4rem
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: -7px 7px 28px 1rem rgba(0,0,0,0.75);
+  }
+
+  .decorationLightsContainer__midPage img, .decorationLightsContainer__bottomPage img{
+    width: 100%;
+  }
+
+  .names {
+    font-size: 12.8rem;
+   }
+
+   .pageContainer{
+    padding: 3rem;
+   }
+
+   .decortaionLightsContainer__topPage img, 
+   .decorationLightsContainer__midPage img, 
+   .decorationLightsContainer__bottomPage img  {
+    height: 13rem;
+   }
+   
+   .dressCode h2 {
+    font-size: 4rem;
+   }
+
+   .forbiddenColors h2{
+    font-size: 3.3rem;
+   }
+
+   .dressCode p {
+    font-size: 3.4rem;
+   }
+
+   .giftTable__title {
+    font-size: 3.5rem;
+   }
+
+   .decortaionLightsContainer__topPage {
+    margin: -1.5rem -3rem 0;
+  }
+
+  .decorationLightsContainer__midPage, 
+  .decorationLightsContainer__bottomPage {
+    margin: -1.5rem -4rem 0;
+  }
+
+  .decorationLightsContainer__bottomPage img {
+    transform: scaleX(-1) rotate(4deg);
+  }
+
+  .decorationLightsContainer__bottomPage, 
+  .title, .farewell, .verseNumber{
+    font-size: 3.8rem;
+  }
+
+  .paragraph{
+    font-size: 2.9rem;
+    padding: 2.5rem;
+  }
+
+  .bibleVerse { 
+    font-size: 5.1rem;
+  }
+
+  .verseNumber{
+    font-size: 3.8rem;
+    margin: 1rem 0;
   }
   
-  
+  .forbiddenColors__ImageContainer img {
+    height: 8.5rem;
+  }
 }
 
 /* Tablets grandes en modo horizontal, laptops pequeñas (por ejemplo, iPad en modo horizontal, MacBook Air) */
@@ -399,13 +469,86 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background: linear-gradient(180deg, rgba(32,41,42,1) 0%, rgba(39,59,43,1) 25%, rgba(103,128,113,1) 50%, rgba(202,204,192,1) 75%, rgba(240,234,201,1) 100%);
+    z-index: 0;
   }
 
   .pageContainer{ 
-    width: 50%;
+    width: 75%;
     margin: 2rem 0;
-    padding: 4rem
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: -7px 7px 28px 1rem rgba(0,0,0,0.75);
+  }
+
+  .decorationLightsContainer__midPage img, .decorationLightsContainer__bottomPage img{
+    width: 100%;
+  }
+
+  .names {
+    font-size: 12.8rem;
+   }
+
+   .pageContainer{
+    padding: 3rem;
+   }
+
+   .decortaionLightsContainer__topPage img, 
+   .decorationLightsContainer__midPage img, 
+   .decorationLightsContainer__bottomPage img  {
+    height: 13rem;
+   }
+   
+   .dressCode h2 {
+    font-size: 4rem;
+   }
+
+   .forbiddenColors h2{
+    font-size: 3.3rem;
+   }
+
+   .dressCode p {
+    font-size: 3.4rem;
+   }
+
+   .giftTable__title {
+    font-size: 3.5rem;
+   }
+
+   .decortaionLightsContainer__topPage {
+    margin: -1.5rem -3rem 0;
+  }
+
+  .decorationLightsContainer__midPage, 
+  .decorationLightsContainer__bottomPage {
+    margin: -1.5rem -4rem 0;
+  }
+
+  .decorationLightsContainer__bottomPage img {
+    transform: scaleX(-1) rotate(4deg);
+  }
+
+  .decorationLightsContainer__bottomPage, 
+  .title, .farewell, .verseNumber{
+    font-size: 3.8rem;
+  }
+
+  .paragraph{
+    font-size: 2.9rem;
+    padding: 2.5rem;
+  }
+
+  .bibleVerse { 
+    font-size: 5.1rem;
+  }
+
+  .verseNumber{
+    font-size: 3.8rem;
+    margin: 1rem 0;
+  }
+  
+  .forbiddenColors__ImageContainer img {
+    height: 8.5rem;
   }
 }
 
@@ -416,13 +559,86 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background: linear-gradient(180deg, rgba(32,41,42,1) 0%, rgba(39,59,43,1) 25%, rgba(103,128,113,1) 50%, rgba(202,204,192,1) 75%, rgba(240,234,201,1) 100%);
+    z-index: 0;
   }
 
   .pageContainer{ 
-    width: 50%;
+    width: 60%;
     margin: 2rem 0;
-    padding: 4rem
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: -7px 7px 28px 1rem rgba(0,0,0,0.75);
+  }
+
+  .decorationLightsContainer__midPage img, .decorationLightsContainer__bottomPage img{
+    width: 100%;
+  }
+
+  .names {
+    font-size: 12.8rem;
+   }
+
+   .pageContainer{
+    padding: 3rem;
+   }
+
+   .decortaionLightsContainer__topPage img, 
+   .decorationLightsContainer__midPage img, 
+   .decorationLightsContainer__bottomPage img  {
+    height: 13rem;
+   }
+   
+   .dressCode h2 {
+    font-size: 4rem;
+   }
+
+   .forbiddenColors h2{
+    font-size: 3.3rem;
+   }
+
+   .dressCode p {
+    font-size: 3.4rem;
+   }
+
+   .giftTable__title {
+    font-size: 3.5rem;
+   }
+
+   .decortaionLightsContainer__topPage {
+    margin: -1.5rem -3rem 0;
+  }
+
+  .decorationLightsContainer__midPage, 
+  .decorationLightsContainer__bottomPage {
+    margin: -1.5rem -4rem 0;
+  }
+
+  .decorationLightsContainer__bottomPage img {
+    transform: scaleX(-1) rotate(4deg);
+  }
+
+  .decorationLightsContainer__bottomPage, 
+  .title, .farewell, .verseNumber{
+    font-size: 3.8rem;
+  }
+
+  .paragraph{
+    font-size: 2.9rem;
+    padding: 2.5rem;
+  }
+
+  .bibleVerse { 
+    font-size: 5.1rem;
+  }
+
+  .verseNumber{
+    font-size: 3.8rem;
+    margin: 1rem 0;
+  }
+  
+  .forbiddenColors__ImageContainer img {
+    height: 8.5rem;
   }
 }
 
@@ -433,13 +649,86 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background: linear-gradient(180deg, rgba(32,41,42,1) 0%, rgba(39,59,43,1) 25%, rgba(103,128,113,1) 50%, rgba(202,204,192,1) 75%, rgba(240,234,201,1) 100%);
+    z-index: 0;
   }
 
   .pageContainer{ 
-    width: 50%;
+    width: 30%;
     margin: 2rem 0;
-    padding: 4rem
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: -7px 7px 28px 1rem rgba(0,0,0,0.75);
+  }
+
+  .decorationLightsContainer__midPage img, .decorationLightsContainer__bottomPage img{
+    width: 100%;
+  }
+
+  .names {
+    font-size: 12.8rem;
+   }
+
+   .pageContainer{
+    padding: 3rem;
+   }
+
+   .decortaionLightsContainer__topPage img, 
+   .decorationLightsContainer__midPage img, 
+   .decorationLightsContainer__bottomPage img  {
+    height: 13rem;
+   }
+   
+   .dressCode h2 {
+    font-size: 4rem;
+   }
+
+   .forbiddenColors h2{
+    font-size: 3.3rem;
+   }
+
+   .dressCode p {
+    font-size: 3.4rem;
+   }
+
+   .giftTable__title {
+    font-size: 3.5rem;
+   }
+
+   .decortaionLightsContainer__topPage {
+    margin: -1.5rem -3rem 0;
+  }
+
+  .decorationLightsContainer__midPage, 
+  .decorationLightsContainer__bottomPage {
+    margin: -1.5rem -4rem 0;
+  }
+
+  .decorationLightsContainer__bottomPage img {
+    transform: scaleX(-1) rotate(4deg);
+  }
+
+  .decorationLightsContainer__bottomPage, 
+  .title, .farewell, .verseNumber{
+    font-size: 3.8rem;
+  }
+
+  .paragraph{
+    font-size: 2.9rem;
+    padding: 2.5rem;
+  }
+
+  .bibleVerse { 
+    font-size: 5.1rem;
+  }
+
+  .verseNumber{
+    font-size: 3.8rem;
+    margin: 1rem 0;
+  }
+  
+  .forbiddenColors__ImageContainer img {
+    height: 8.5rem;
   }
 }
 
@@ -450,14 +739,88 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background: linear-gradient(180deg, rgba(32,41,42,1) 0%, rgba(39,59,43,1) 25%, rgba(103,128,113,1) 50%, rgba(202,204,192,1) 75%, rgba(240,234,201,1) 100%);
+    z-index: 0;
   }
 
   .pageContainer{ 
     width: 30%;
     margin: 2rem 0;
-    padding: 4rem
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: -7px 7px 28px 1rem rgba(0,0,0,0.75);
   }
+
+  .decorationLightsContainer__midPage img, .decorationLightsContainer__bottomPage img{
+    width: 100%;
+  }
+
+  .names {
+    font-size: 12.8rem;
+   }
+
+   .pageContainer{
+    padding: 3rem;
+   }
+
+   .decortaionLightsContainer__topPage img, 
+   .decorationLightsContainer__midPage img, 
+   .decorationLightsContainer__bottomPage img  {
+    height: 13rem;
+   }
+   
+   .dressCode h2 {
+    font-size: 4rem;
+   }
+
+   .forbiddenColors h2{
+    font-size: 3.3rem;
+   }
+
+   .dressCode p {
+    font-size: 3.4rem;
+   }
+
+   .giftTable__title {
+    font-size: 3.5rem;
+   }
+
+   .decortaionLightsContainer__topPage {
+    margin: -1.5rem -3rem 0;
+  }
+
+  .decorationLightsContainer__midPage, 
+  .decorationLightsContainer__bottomPage {
+    margin: -1.5rem -4rem 0;
+  }
+
+  .decorationLightsContainer__bottomPage img {
+    transform: scaleX(-1) rotate(4deg);
+  }
+
+  .decorationLightsContainer__bottomPage, 
+  .title, .farewell, .verseNumber{
+    font-size: 3.8rem;
+  }
+
+  .paragraph{
+    font-size: 2.9rem;
+    padding: 2.5rem;
+  }
+
+  .bibleVerse { 
+    font-size: 5.1rem;
+  }
+
+  .verseNumber{
+    font-size: 3.8rem;
+    margin: 1rem 0;
+  }
+  
+  .forbiddenColors__ImageContainer img {
+    height: 8.5rem;
+  }
+
 }
 
 /* Pantallas ultrawide o 4K+ (más de 1920px de ancho) */
