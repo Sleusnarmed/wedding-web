@@ -202,9 +202,9 @@ const BodaDaraiPage = () => {
           <h2>Ubicación</h2>
           <div className={styles.ubicationContainer__information}>
             <p>
-              Por tu comodidad en este día tan importante requerimos que lleves
-              cojín y almohada para sentarte al momento de la ceremonia, en caso
-              de requerir una silla favor de contactarnos.
+              Por tu comodidad durante la ceremonia requerimos que lleves un
+              cojín para sentarte ya que será a la orilla de la playa. En caso
+              de requerir silla favor de hacérnoslo saber.
               <br /> <br />
               Día de la boda: <br />
               8 de Febrero 2025

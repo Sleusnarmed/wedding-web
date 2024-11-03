@@ -65,7 +65,7 @@ const Confirmation = ({ guestId, initialConfirmation, data, onUpdate }) => {
       <h1>Confirmar tu asistencia</h1>
       <p className={styles.invAvalaible}>
         ¡Hola {data.name}! <br />
-        {data.maxinvguests === 1 ? "Estás invitado" : `Puedes asistir con ${data.maxinvguests - 1} acompañante(s)`}
+        {data.maxinvguests === 1 ? <p></p> : `Puedes asistir con ${data.maxinvguests - 1} acompañante(s)`}
       </p>
       {data.maxinvguests === 1 ? <p></p> : <><select
         id="guestsConfirmed"

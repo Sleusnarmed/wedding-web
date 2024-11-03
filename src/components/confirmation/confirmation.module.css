@@ -83,8 +83,13 @@
     font-size: 2.5rem;
   }
 
-  .confirmationButton, .cancelConfirmationButton {
+  .confirmationButton {
     font-size: 1.8rem;
+  }
+
+  .cancelConfirmationButton{
+    font-size: 2.5rem;
+    margin-top: 1rem;
   }
 
   .customSelect{
@@ -106,8 +111,13 @@
     font-size: 3rem;
   }
 
-  .confirmationButton, .cancelConfirmationButton {
+  .confirmationButton{
     font-size: 2.2rem;
+  }
+
+  .cancelConfirmationButton{
+    font-size: 3.2rem;
+    margin-top: 1rem;
   }
 
   .customSelect{
@@ -128,8 +138,13 @@
     font-size: 2.5rem;
   }
 
-  .confirmationButton, .cancelConfirmationButton {
+  .confirmationButton {
     font-size: 2.5rem;
+  }
+
+  .cancelConfirmationButton{
+    font-size: 3.7rem;
+    margin-top: 1rem;
   }
 
   .customSelect{
@@ -140,30 +155,168 @@
 
 /* Tablets en modo retrato (por ejemplo, iPad en modo vertical) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-  
+  .confirmedContainer h1{
+    font-size: 5rem;
+  }
+
+  .confirmationContainer h1 {
+    font-size: 4rem;
+  }
+
+  .invAvalaible{
+    font-size: 2.5rem;
+  }
+
+  .confirmationButton {
+    font-size: 3rem;
+  }
+
+  .cancelConfirmationButton{
+    font-size: 4rem;
+  }
+
+  .customSelect{
+    font-size: 3.8rem;
+    margin: 1rem 0 1.5rem 0;
+  }
 }
 
 /* Tablets grandes en modo horizontal, laptops pequeñas (por ejemplo, iPad en modo horizontal, MacBook Air) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Estilos para tablets en modo horizontal y laptops pequeñas */
+  .confirmedContainer h1{
+    font-size: 5.5rem;
+  }
+
+  .confirmationContainer h1 {
+    font-size: 4.5rem;
+  }
+
+  .invAvalaible{
+    font-size: 3rem;
+  }
+
+  .confirmationButton {
+    font-size: 3.5rem;
+  }
+
+  .cancelConfirmationButton{
+    font-size: 4.5rem;
+  }
+
+  .customSelect{
+    font-size: 3.8rem;
+    margin: 1rem 0 1.5rem 0;
+  }
 }
 
 /* Pantallas medianas (laptops grandes, monitores de escritorio estándar) */
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  /* Estilos para laptops grandes y monitores estándar */
+  .confirmedContainer h1{
+    font-size: 5.5rem;
+  }
+
+  .confirmationContainer h1 {
+    font-size: 4.5rem;
+  }
+
+  .invAvalaible{
+    font-size: 3rem;
+  }
+
+  .confirmationButton {
+    font-size: 3.5rem;
+  }
+
+  .cancelConfirmationButton{
+    font-size: 4.5rem;
+  }
+  
+  .customSelect{
+    font-size: 3.8rem;
+    margin: 1rem 0 1.5rem 0;
+  }
 }
 
 /* Pantallas grandes (monitores de escritorio grandes, iMacs) */
 @media only screen and (min-width: 1281px) and (max-width: 1440px) {
-  /* Estilos para monitores grandes */
+  .confirmedContainer h1{
+    font-size: 5.5rem;
+  }
+
+  .confirmationContainer h1 {
+    font-size: 4.5rem;
+  }
+
+  .invAvalaible{
+    font-size: 3rem;
+  }
+
+  .confirmationButton {
+    font-size: 3.5rem;
+  }
+
+  .cancelConfirmationButton{
+    font-size: 4.5rem;
+  }
+  
+  .customSelect{
+    font-size: 3.8rem;
+    margin: 1rem 0 1.5rem 0;
+  }
 }
 
 /* Pantallas muy grandes (monitores 4K o pantallas ultrawide) */
 @media only screen and (min-width: 1441px) and (max-width: 1920px) {
-  /* Estilos para monitores 4K o pantallas ultrawide */
+  .confirmedContainer h1{
+    font-size: 5.5rem;
+  }
+
+  .confirmationContainer h1 {
+    font-size: 4.5rem;
+  }
+
+  .invAvalaible{
+    font-size: 3rem;
+  }
+
+  .confirmationButton {
+    font-size: 3.5rem;
+  }
+
+  .cancelConfirmationButton{
+    font-size: 4.5rem;
+  }
+  
+  .customSelect{
+    font-size: 3.8rem;
+    margin: 1rem 0 1.5rem 0;
+  }
 }
 
 /* Pantallas ultrawide o 4K+ (más de 1920px de ancho) */
 @media only screen and (min-width: 1921px) {
-  /* Estilos para pantallas ultrawide o más grandes que 4K */
+  .confirmedContainer h1{
+    font-size: 5.5rem;
+  }
+
+  .confirmationContainer h1 {
+    font-size: 4.5rem;
+  }
+
+  .invAvalaible{
+    font-size: 3rem;
+  }
+
+  .confirmationButton {
+    font-size: 3.5rem;
+  }
+
+  .cancelConfirmationButton{
+    font-size: 4.5rem;
+  }
+  
+  .customSelect{
+    font-size: 3.8rem;
+    margin: 1rem 0 1.5rem 0;
+  }
 }
