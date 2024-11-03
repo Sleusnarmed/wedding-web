@@ -207,7 +207,9 @@ const BodaDaraiPage = () => {
               favor de contactarnos. (Texto a verificar con Saraí)
               <br /> <br />
               Día de la boda: <br />
-              8 de Febrero 2025 Recepción: 4pm
+              8 de Febrero 2025
+              <br />
+              <br /> Recepción: 4pm
               <br />
               (La fiesta será en el mismo lugar)
               <br /> <br />
