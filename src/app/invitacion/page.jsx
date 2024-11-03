@@ -8,7 +8,7 @@ import Loader from "@/components/loader/Loader";
 import Confirmation from "@/components/confirmation/Confirmation";
 import VideoPlayer from "@/components/videoPlayer/VideoPlayer";
 import MapEmbed from "@/components/mapEmbed/MapEmbed";
-
+export const dynamic = "force-dynamic";
 const getData = async () => {
   const res = await fetch("/api/guests", {
     cache: "no-store",

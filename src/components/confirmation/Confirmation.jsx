@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 import styles from "./confirmation.module.css";
-
+export const dynamic = "force-dynamic";
 const Confirmation = ({ guestId, initialConfirmation, data, onUpdate }) => {
   const [confirmation, setConfirmation] = useState(initialConfirmation);
   const [loading, setLoading] = useState(false);
