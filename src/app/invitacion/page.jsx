@@ -26,7 +26,6 @@ const BodaDaraiPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const router = useRouter();
-  
 
   useEffect(() => {
     const guestName = localStorage.getItem("guestName");
@@ -71,7 +70,12 @@ const BodaDaraiPage = () => {
   }
 
   if (error) {
-    return <p>{error} Por favor contáctate con Sarai o manda correo a Jmsalazar.macg@hotmail.com</p>;
+    return (
+      <p>
+        {error} Por favor contáctate con Sarai o manda correo a
+        Jmsalazar.macg@hotmail.com
+      </p>
+    );
   }
 
   return (
@@ -202,10 +206,14 @@ const BodaDaraiPage = () => {
               un cojín o almohada para sentarte, en caso de requerir una silla
               favor de contactarnos. (Texto a verificar con Saraí)
               <br /> <br />
-              Recepción: 4pm<br />
+              Día de la boda: <br />
+              8 de Febrero 2025 Recepción: 4pm
+              <br />
               (La fiesta será en el mismo lugar)
               <br /> <br />
               Pizza Paraíso SAN BRUNO, Telchac Puerto Yucatán
+              <br />
+              <br />
             </p>
             <div className={styles.mapCotainer}>
               <MapEmbed />
