@@ -3,7 +3,7 @@ import { sql } from '@vercel/postgres';
 import { NextResponse } from 'next/server';
 
 // Manejo de solicitud GET
-export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const { rows } = await sql`SELECT * FROM guests`;
