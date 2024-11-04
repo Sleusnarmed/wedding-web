@@ -1,7 +1,7 @@
 // src/components/GuestsTable.jsx
 'use client'
 import { useEffect, useState } from 'react';
-import styles from './admin-page.module.css'
+import styles from './admin-page.module.css';
 
 function GuestsTable() {
   const [guests, setGuests] = useState([]);
@@ -46,7 +46,9 @@ function GuestsTable() {
               <td>{guest.name}</td>
               <td>{guest.password}</td>
               <td>{guest.maxinvguests}</td>
-              <td>{guest.confirmation ? 'Yes' : 'No'}</td>
+              <td className={guest.confirmation ? styles.confirmedText : styles.notConfirmedText}>
+                {guest.confirmation ? 'Yes' : 'No'}
+              </td>
               <td>{guest.guestsconfirmed}</td>
             </tr>
           ))}

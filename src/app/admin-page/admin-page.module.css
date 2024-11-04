@@ -1,30 +1,32 @@
 /* Añadir este CSS en tu archivo global.css o en un módulo CSS */
 .guestsTable {
-    
+  font-size: clamp(5rem, 4rem + 8vw, 10rem);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #131723;
     
 }
 
 .table {
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
 }
   
 .table th, .table td {
     padding: 8px;
-    border: 1px solid #ddd;
-   
+    border: 2px solid #4a5568;
+    color: white;
     text-align: center;
   }
+
+.confirmedText {
+  background-color: #2b2e7d;
+  font-weight: bold;
+}
   
-.table th {
-    background-color: #f4f4f4;
-  }
-  
-.table tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
+.notConfirmedText {
+  background-color: #7e9cf4;
+  font-weight: bold;
+}
