@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState, useCallback } from "react";
 import styles from "./confirmation.module.css";
 
@@ -36,7 +38,8 @@ const Confirmation = ({ guestId, initialConfirmation, data, onUpdate }) => {
         setLoading(false);
       }
     },
-    [guestId, guestsConfirmed, onUpdate]
+    [guestId, guestsConfirmed, onUpdate],
+    console.log(data)
   );
 
   const handleGuestChange = useCallback((e) => {
