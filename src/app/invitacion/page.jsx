@@ -13,8 +13,8 @@ const getData = async () => {
   const res = await fetch("/api/guests", {
     cache: "no-store",
     next: {
-      revalidate: 1,
-    }
+      revalidate: 0,
+    },
   });
 
   if (!res.ok) {
