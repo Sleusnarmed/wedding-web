@@ -67,8 +67,12 @@ const Confirmation = ({ guestId, initialConfirmation, data, onUpdate }) => {
     <div className={styles.confirmationContainer}>
       <h1>Confirmar tu asistencia</h1>
       <p className={styles.invAvalaible}>
-        ¡Hola {data.name}! <br />
+        ¡Hola {data.name}!
+        <br />
         {data.maxinvguests === 1 ? null : `Puedes asistir con ${data.maxinvguests - 1} acompañante(s)`}
+       
+        <br />
+        Puedes seleccionar el número abajo:
       </p>
       {data.maxinvguests === 1 ? (
         <button
