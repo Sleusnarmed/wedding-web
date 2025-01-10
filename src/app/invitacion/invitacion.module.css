@@ -123,18 +123,16 @@
 }
 
 
-.linkTable img, .linkTable svg {
+.linkTable img {
   width: 10rem;
   height: 50%;
   background-color: #595959;
   padding: 1rem;
   color: white;
 }
-.linkTable svg{
-  padding: 0;
-}
+
 .linkTable img:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .bibleVerse {
@@ -178,7 +176,6 @@
   color: var(--text-color_mainPage_secondary);
   margin-bottom: 3rem;
 }
-
 
 /* Móviles muy pequeños (por ejemplo, iPhone SE, Galaxy S5) */
 @media only screen and (max-width: 320px) {
