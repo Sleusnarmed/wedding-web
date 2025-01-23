@@ -188,7 +188,7 @@ const BodaDaraiPage = () => {
             </a>
             <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51555960" className={styles.linkTable}>
               <Image
-                className={styles.liverpool}
+                className={styles.linkTable}
                 src="/img/liverpoolLogo.png"
                 alt="Logo de Liverpool"
                 width={300}
