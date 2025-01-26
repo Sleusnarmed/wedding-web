@@ -219,7 +219,7 @@ const BodaDaraiPage = () => {
             <div className={styles.mapCotainer}>
               <MapEmbed />
               <p>
-                !Estate atento a está página, en los próximos meses habrán más
+                !Estate atento a está página, en los próximos días habrán más
                 avisos!
               </p>
             </div>
