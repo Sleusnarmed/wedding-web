@@ -186,7 +186,10 @@ const BodaDaraiPage = () => {
                 height={80}
               />
             </a>
-            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51555960" className={styles.linkTable}>
+            <a
+              href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51555960"
+              className={styles.linkTable}
+            >
               <Image
                 className={styles.linkTable}
                 src="/img/liverpoolLogo.png"
@@ -203,7 +206,8 @@ const BodaDaraiPage = () => {
             <p>
               Por tu comodidad durante la ceremonia requerimos que lleves un
               cojín para sentarte ya que será a la orilla de la playa. En caso
-              de requerir silla favor de hacérnoslo saber.
+              de requerir silla favor de hacérnoslo saber. ¡Solamente será para
+              el momento en el que estemos en la playa!
               <br /> <br />
               Día de la boda: <br />
               8 de Febrero 2025
@@ -218,10 +222,7 @@ const BodaDaraiPage = () => {
             </p>
             <div className={styles.mapCotainer}>
               <MapEmbed />
-              <p>
-                !Estate atento a está página, en los próximos 8 días habrán más
-                avisos!
-              </p>
+              <p>!No se te olvide llevar cojín!</p>
             </div>
           </div>
         </div>
