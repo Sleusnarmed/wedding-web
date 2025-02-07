@@ -54,7 +54,7 @@ export default function VideoPlayer() {
               height="500"
               src="https://www.youtube.com/embed/fClW6n_QLyo?autoplay=1"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen

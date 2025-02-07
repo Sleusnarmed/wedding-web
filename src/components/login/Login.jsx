@@ -23,7 +23,11 @@ const Login = () => {
       if (res.ok) {
         const data = await res.json();
         localStorage.setItem('guestName', data.name); // Guardar el nombre del invitado
-        router.push('/invitacion'); // Redirigir al usuario una vez autenticado
+        if (password === '1t2e3a4m5o') {
+          router.push('/revelacion'); // Si la contraseña es "admin123", redirige a /admin
+        } else {
+          router.push('/invitacion'); // Si no, redirige a /invitacion
+        }
       } else {
         setError('Contraseña incorrecta. Inténtalo de nuevo.');
       }
