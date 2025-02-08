@@ -7,6 +7,33 @@
   background-color: transparent;
 }
 
+.infoContainer{
+  display: flex;
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: rgba(202, 204, 192, 0.2);
+  border-radius: 10px;
+  min-height: 60vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem 0;
+}
+
+.infoContainer h2{
+  margin: 2rem 0;
+  font-size: 3rem;
+  color: var(--text-color_mainPage);
+  font-family: var(--font-subtitles);
+  text-rendering: optimizeLegibility;
+}
+
+.infoContainer iframe{
+  border-radius: 10px;
+  width: 95%;
+  height: 60vh;
+}
+
 .pageContainer {
   display: flex;
   flex-direction: column;

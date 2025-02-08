@@ -94,6 +94,19 @@ const BodaDaraiPage = () => {
           />
         </div>
         <h1 className={styles.names}>Daniel y Saraí</h1>
+        <div className={styles.infoContainer}>
+          <h2>¿Cómo llegar?</h2>
+          <iframe
+                width="560"
+                height="500"
+                src="https://www.youtube.com/embed/i1MyPuBD6lQ"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+          </div>
         <Countdown />
         <div className={styles.gratitudeText}>
           <p className={styles.title}>¡El amor esta en el aire!</p>
