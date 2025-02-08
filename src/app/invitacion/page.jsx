@@ -99,7 +99,7 @@ const BodaDaraiPage = () => {
           <iframe
                 width="560"
                 height="500"
-                src="https://www.youtube.com/embed/i1MyPuBD6lQ"
+                src="https://youtube.com/embed/Bb6WSjYb5I8?feature=share"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
